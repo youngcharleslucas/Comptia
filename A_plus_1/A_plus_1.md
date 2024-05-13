@@ -97,7 +97,14 @@
 * TCP/IP 
 	- Made of many protocols like HTTP and FTP
 * TCP - connection oriented Protocol  
+	- In the applications and network layers of OSI
+	- Keeps tract of the segments being transmitted or received by assigning numbers to every single one  
+	- Flow control limits the rate of data transfer to ensure reliability  
+	- It won't load the whole page if a single piece of the data is missing  
 * UDP - User Datagram Protocol, is connectionless and unreliable but fast  
+	- Used for smaller data sized transfers
+	- Suitable for milticasting and packet switching  
+	- Used for real-time applications
 ![alt text](./images/udp_tcp.JPG "missing udp_tcp.JPG")
 
 ### Ports  
@@ -106,11 +113,68 @@
 	- share files over a LAN or WAN  
 	- TCP port 20 and 21  
 	- Supports authentication, authorization, and directory browsing  
-	- Unencrypted. Should use SFTP  
+	- Unencrypted. Should use SFTP 
+	- **FileZilla** application for FTP  
 * Trivial File Transfer Protocol  
 	- Used to push or pull files from a server  
 	- Commonly used to manage devices like IP phones, routers, switches  
 	- DOES NOT SUPPORT authentication, authorization, or diretory browsing  
 	- UDP port 69  
 	- Unencrypted, use SFTP
+* Secure File Transfer Protocol  
+	- Secure version of FTP  
+	- has encryption  
+	- SFTP is an extension of SSH which is shy they use the same port number  
+	- TCP Port 22  
+* Simple Mail Transfer Protocol  
+	- outgoing mail to a server  
+	- TCP Port 25  
+* Post Office Protocol (POP3)  
+	- Downloads incoming mail from server  
+	- TCP port 110  
+* Internet Message Access Protocol (IMAP)  
+	- synchronizes incoming mail from a server  
+	- TCP port 143  
+* Telnet  
+	- provides remote command line acces to interact with a server  
+	- Considered insecure and should no longer be used, use SSH instead  
+	- TCP port 23  
+	- More common on Linux  
+* SSH - Secure Shell 
+	- provides encrypted remote command line access to interact with a server  
+	- SSH Version 2 added SFTP and SCP support 
+	- TCP port 22  
+	- **PuTTY** is the application used  
+* DNS 
+	- TCP/UDP port 53  
+* DHCP - Dynamic Host Configuration Protocol  
+	- provides various configurations to clients in an IP network via broadcast  
+	- UDP port 67 is the server port, and 68 is the client port  
+* HTTP
+	- TCP port 80
+* HTTPS
+	- securely transfers using SSL or TLS  
+	- TCP port 443  
+* NetBIOS  
+	- Network Basic Input/Output System provides communications in Windows Network 
+	- Used in Windows before IP networking  
+	- NetBIOS over TCP/IP is still used in Windows  
+	- TCP/UDP  port 137/139  
+* SNMP - Simple Network Management Protocol
+	- used to query, configure, and monitor host in LAN  
+	- SNMPv3 encrypts communication where previous versions did not  
+	- UDP port 161/162  
+* LDAP - Lightweight Directory Access Protocol 
+	- used in domain-based network environments to facilitate system and user management  
+	- TCP/UDP port 389  
+* Server Message Block (SMB)
+	- file sharing, network browsing, print services  
+	- Commonly used in Windows networks but supported in Linux and MacOS  
+	- CIFS(Common Internet File System) is an open implementation used on Linux and macOS  
+	- TCP port 445  
+* RDP - Remote Desktop Protocol  
+	- securely access Windows desktop  
+	- TCP port 3389  
 	
+### TCP vs UDP  
+
