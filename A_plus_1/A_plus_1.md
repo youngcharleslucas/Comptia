@@ -101,10 +101,11 @@
 	- Keeps tract of the segments being transmitted or received by assigning numbers to every single one  
 	- Flow control limits the rate of data transfer to ensure reliability  
 	- It won't load the whole page if a single piece of the data is missing  
+	- 24-60 bytes (high overhead)
 * UDP - User Datagram Protocol, is connectionless and unreliable but fast  
 	- Used for smaller data sized transfers
 	- Suitable for milticasting and packet switching  
-	- Used for real-time applications
+	- Used for real-time applications  
 ![alt text](./images/udp_tcp.JPG "missing udp_tcp.JPG")
 
 ### Ports  
@@ -177,4 +178,64 @@
 	- TCP port 3389  
 	
 ### TCP vs UDP  
+* TCP  
+	- TCP Segment  
+		- 24-60 bytes  
+![alt text](./images/tcp_segment.JPG "missing tcp_segment.JPG") 
+		- Connection-oriented  
+		- Virtual Circuit  
+		- Sequenced  
+* UDP segment  
+![alt text](./images/udp_segment.JPG "missing udp_segment.JPG")  
+	- 8 bytes, lightweight  
+	- un-sequenced  
+	- no virtual circuit  
+	- connectionless  
 
+### Networking Devices  
+* NIC - Network Interface Card  
+	- connect to the network  
+	- each one has a 48-bit MAC address 
+	- The link light and activity lights are used to troubleshoot connections made to the NIC  
+		- **Link light** verifes the cable is plugged in. It is the light on the left.  
+		- **Activity Light** will blink as data goes throught he interface  
+* Hubs - not used anymore because it broadcast to every port.  There were data collisions 
+* Switch 
+	- replaces hub  
+	- used to connect and manage wired communications in a LAN  
+		- Forward frames based on MAC addresses  
+		- Managed switch vs unmanaged switch  
+			- Managed switches can be configured
+				- used in enterprise LANs to meet their needs for enforcing policies  
+				- Provide additional functions like VLANs, port security, DHCP snooping, and dynamic ARP inspection  
+				- expensive  
+			- Unmanaged switches cannot be configured  
+				- used in SOHO networks  
+				- Lower cost  
+* Router 
+	- used to connect different broadcast domains to eachother  
+	- Commonly used to connect a LAN to a WAN (site to site or the Internet)  
+	- Forwards traffice based on IP Address in packets  
+	- Can usuall provide DHCP  
+* Firewall
+	- Security device used to prevent authorized access to a LAN from the Internet  
+	- can be hardware appliance or host-based software  
+* Access Point (AP)  
+	- used to provide and manage wireless communications in a LAN 
+	- Uses Radio Frequencies (RF) to transmit data to the host  
+* SOHO Router (Small office, Home office)
+	- multifunction device offering many features beyond routing  
+	- Includes: wireless, switching, firewall, security, and DHCP  
+	- Can include: content filtering, file server, print server, VPN client and server, and other features  
+	- Forwards traffic based on IP Addresses in packets  
+	
+* Power over Ethernet (PoE)  
+![alt text](./images/poe_chart.JPG "missing poe_chart.JPG")
+	- Requires a dedicated PoE switch, or else you can use a PoE Injector  
+	- Allows you to power devices using just an Ethernet cable 
+* DSL - digital subscriber line  
+	- used over telephone lines  
+* ONT - Optical Network Terminal
+	- converts optical signal from fiber  
+* Software-defined networking (SND)  
+	- SDN Controller in the control plane directs communications between devices in the data plane  
