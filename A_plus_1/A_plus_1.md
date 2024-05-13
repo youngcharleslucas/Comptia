@@ -20,3 +20,76 @@
 		- Local Cloud
 	- Remote Network  
 		- Cloud 
+## Mobile Devices  
+**RTM** - read the manual. This is per device, for maintenance.  
+* Digitizer - like a signing pad, takes a written representation and puts it into a digital format  
+
+### Displays  
+* LCD - Liquid Crystal Display  
+	- It doesn't produce light  
+	- Uses a backlight
+		- Cold Cathode Fluorescent Lamp (CCFL)  
+	- Inverter
+		- Converts DC to AC for the backlight  
+		- If there is a problem with flickering or dimness it might be the inverter  
+	- Display technology 
+		- Twisted nematic (TN)
+			- very old
+			- good response time  
+			- very little lag, high refresh rate, 240 Hz  
+			- Bad at angles  
+		- In-plane switching (IPS)  
+			- Great color  
+			- Good view angles  
+			- Little lag  
+		- Vertical alignment (VA) 
+			- Great Color  
+			- Okay Response  
+		- Organic light-emitting diode (OLED)
+			- Light-emitting compound  
+			- There is no need for a backlight 
+				- Which means that it can have a dark black color  
+			- Contrast ratio of OLED displays exceeds that of LCD  
+			- OLED is highest quality  
+			- Found in smaller devices  
+### Device Accessories  
+* Port replicator - reproduces the functions of the ports. (Looks like a usb hub to me)  
+	- Will have usb, display (HDMI, DP, VGA), or ethernet connection
+* Docking station - similar to port replicator but can have a full drive bay, optical drives, memory card slots  
+* RAM
+	- SODIMM - most laptops use Small Outline Dual in-line Memory Modules
+### Connection methods  
+* USB - universal serial bus
+	- c / microUSB/ miniUSB  
+* Bluetooth - 30ft range  
+* NFC - 4cm range  
+	
+### Bluetooth and MDM 
+* Mobile Device Management(MDM)/ Mobile Application Management (MAM)  
+
+### Cellular Standards  
+* xG - The G stands for generation  
+* 2G - handle phone calls, SMS, and limited data
+	- GSM (GLobal System for Mobile Communication)
+		- used by AT&T and T-Mobile  
+		- The US and the rest of the world used GSM
+	- CDMA (Code-Driven multiple acces)  
+		- used by Sprint and Verizon
+		- Uses preferred roaming list (PRL)
+			- Required contiunous updates with PRL to establish communications
+	- GSM and CDMA were not compatible with eachother
+* 3G - allows additional features such as mobile Internet access, video calls and modile TV  
+* 4G 
+	- WIMAX and Long-Term Evolution (LTE) where 2 standards, LTE won.  
+	- Faster than 3G, Theoretical max is 300Mbps down and 75 Mbps Up.
+	- No need for GSM or CDMA  
+	- One standard  
+* 5G
+	- 100x faster than 4G  
+	- May hit speeds of 20Gbps  
+	- Low-latency links (Connects very fast between devices)
+	
+### Data Synchronization  
+* 
+
+	
