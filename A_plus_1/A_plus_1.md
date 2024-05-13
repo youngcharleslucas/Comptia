@@ -90,6 +90,27 @@
 	- Low-latency links (Connects very fast between devices)
 	
 ### Data Synchronization  
-* 
 
+
+## Networking  
+### Protocols  
+* TCP/IP 
+	- Made of many protocols like HTTP and FTP
+* TCP - connection oriented Protocol  
+* UDP - User Datagram Protocol, is connectionless and unreliable but fast  
+![alt text](./images/udp_tcp.JPG "missing udp_tcp.JPG")
+
+### Ports  
+* 65,535 ports on a computer  
+* File Transfer Protocol - FTP
+	- share files over a LAN or WAN  
+	- TCP port 20 and 21  
+	- Supports authentication, authorization, and directory browsing  
+	- Unencrypted. Should use SFTP  
+* Trivial File Transfer Protocol  
+	- Used to push or pull files from a server  
+	- Commonly used to manage devices like IP phones, routers, switches  
+	- DOES NOT SUPPORT authentication, authorization, or diretory browsing  
+	- UDP port 69  
+	- Unencrypted, use SFTP
 	
