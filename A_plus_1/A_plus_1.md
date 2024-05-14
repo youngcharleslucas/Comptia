@@ -309,7 +309,7 @@
 
 ### Network Classes  
 * the first 8 bits max at 223 because of class D an E below  
-![alt text](./images/classful_ranges.PNG "missing classful_ranges.PNG")  
+![alt text](./images/classful_ranges.png "missing classful_ranges.png")  
 
 
 ### Figuring out the Network ID  
