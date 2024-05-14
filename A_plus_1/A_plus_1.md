@@ -336,6 +336,7 @@ EX: 192.168.30.4/8 => subnet mask of 255.0.0.0 (Class A)
 Another EX: 172.30.6.4/16  
 Network IP = 172.30.0.0  
 Broadcast IP = 172.30.255.255  
+* Know the difference betwee Networks and hosts. The higher the CIDR number the more Networks that can be assigned the IP but fewer hosts. The lower the CIDR the fewer networks but more Hosts in the IP.  
 
 ### Communication with IP  
 * Unicast - one to one communication  
@@ -352,3 +353,6 @@ Broadcast IP = 172.30.255.255
 	- IP ranges 192.168.30.255/24  
 * Loopback(localhost): used for a host to communicate with itself  
 	- IP ranges 127.0.0.0 - 127.255.255.255  
+	- Loopback means talk to my own computer, just the same as pinging my own IP  
+	- Used to test a local software.  
+
