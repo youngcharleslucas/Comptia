@@ -326,4 +326,8 @@ Network ID is = 192.168.30.0
 * Private IP - designated to only be used internally
 ![alt text](./images/private_ipv4.JPG "missing private_ipv4.JPG")  
 
-
+### CIDR - Classless Inter-Domain Routing  
+EX: 192.168.30.4/24 => subnet mask of 255.255.255.0 (Class C)  
+EX: 192.168.30.4/16 => subnet mask of 255.255.0.0 (Class B)  
+EX: 192.168.30.4/8 => subnet mask of 255.0.0.0 (Class A)  
+* Lets you know what the subnet mask is for an IP address  
