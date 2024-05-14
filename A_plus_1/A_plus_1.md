@@ -319,5 +319,11 @@ Subnet Mask = 255.255.255.0
 Network ID is = 192.168.30.0   
 * Computers with the same Network ID are on the same switch (possibly) and can talk to eachother  
 * Devices with different Network IDs will need a router to communicate  
+* Default Gateway - the IP address used by the switch to communicate to devices outside of the switch  
+
+### Private IP addresses   
+* Public IP - connect to the internet, given out by ISP  
+* Private IP - designated to only be used internally
+![alt text](./images/private_ipv4.JPG "missing private_ipv4.JPG")  
 
 
