@@ -331,3 +331,24 @@ EX: 192.168.30.4/24 => subnet mask of 255.255.255.0 (Class C)
 EX: 192.168.30.4/16 => subnet mask of 255.255.0.0 (Class B)  
 EX: 192.168.30.4/8 => subnet mask of 255.0.0.0 (Class A)  
 * Lets you know what the subnet mask is for an IP address  
+* **Network IP** - 192.168.30.0/24, so 192.168.30.0, the first IP, is reserved for the Network IP  
+* **Broadcast IP** - 192.168.30.255, the last IP, is reserved for Broadcast IP  
+Another EX: 172.30.6.4/16  
+Network IP = 172.30.0.0  
+Broadcast IP = 172.30.255.255  
+
+### Communication with IP  
+* Unicast - one to one communication  
+	- **Public IP**: routable IP addresses assigned by an ISP.  
+	- **Private IP**: Non-routable IP address.  
+	- **APIPA**: Automatic private IP address self assigned by a host when DHCP is not available  
+		- IP ranges 169.254.0.0 - 239.255.255.255 
+		- Usually an error, the computer tried getting an IP from a DHCP server, but none was returned, so the computer creates its own IP address in this range  
+		- The device won't have internet access and won't find any server files  
+* Multicast: One to many communication  
+	- IP ranges 224.0.0.0 - 239.255.255.255 
+	- Like for sending an update out to a set of devices   
+* Broadcast (Layer 3): One to everyone  
+	- IP ranges 192.168.30.255/24  
+* Loopback(localhost): used for a host to communicate with itself  
+	- IP ranges 127.0.0.0 - 127.255.255.255  
