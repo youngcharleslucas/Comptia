@@ -239,3 +239,4 @@
 	- converts optical signal from fiber  
 * Software-defined networking (SND)  
 	- SDN Controller in the control plane directs communications between devices in the data plane  
+
