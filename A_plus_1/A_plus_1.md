@@ -259,7 +259,7 @@
 	
 ### Wifi Standards  
 * WIFI 4  and up supports MIMO (Multiple in, Multiple Out)  
-![alt text](./images/wifi_standards.PNG "missing wifi_standards.PNG")  
+![alt text](./images/wifi_standards.png "missing wifi_standards.png")  
 
 ### WIFI Considerations  
 * SSID (sevice Set Identifier)  
