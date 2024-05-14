@@ -240,3 +240,84 @@
 * Software-defined networking (SND)  
 	- SDN Controller in the control plane directs communications between devices in the data plane  
 
+### Join wireless networks
+
+### 2.4 GHZ vs 5 GHz  
+* 2.4 GHz Spectrum  
+	- Long range communication, better penetration through barriers
+	- Slower than 5 GHz  
+	- Higher rate of interference because of long range  
+	- 11 channels in total  
+	- Non-overlapping channels 1, 6, 11 offer the best chance of minimizing interference  
+* 5 GHz Spectrum  
+	- Short range, poor penetration  
+	- Faster data rate  
+	- 45 channels, 24 non-overlapping  
+	- 20 MHz uses 36, 40, 44, 48, 149, 153, 157, 161, 165  
+	- 40 MHz uses 38, 46, 151, 159  
+	- Low chance of interference because of its shorter range  
+	
+### Wifi Standards  
+* WIFI 4  and up supports MIMO (Multiple in, Multiple Out)  
+![alt text](./images/wifi_standards.PNG "missing wifi_standards.PNG")  
+
+### WIFI Considerations  
+* SSID (sevice Set Identifier)  
+	- name of the wifi network  
+	- always change the default name  
+* IP Address - set a static IP for administration  
+* change default username and password  
+* Long-Range fixed wireless  
+	- used to connect wireless devices over miles  
+	- Usually installed using point-to-point directional antennas  
+	- May have to go to the FCC to et a license for the radio frequency  
+* RFID (Radio-frequency identification) 
+	- uses electromagnetic fields to automatically identify and track tags attached to objects  
+	- used in access cards, ez-pass, or inventory management  
+
+### Types of servers  
+* DNS - translate domain name to IP address  
+* DHCP - gives out IP address on a network  
+* Fileshare - sshares files and folders on network  
+* Print Servers  
+* Mail Servers  
+* Syslog - Recieves logs from devices in network  
+* Web Servers  
+
+### Internet Appliances  
+* Spam Gateways - keeps spam from entering emails  
+* Unified Threat Management (UTM)  
+	- A combination of antimalware, firewall and intrusion detection system  
+* Load Balancers - allow multiple servers served the same amount of traffic  
+* Proxy Servers  
+	- Request webpages on behalf of users  
+	- Can be used to filter out web traffic, such as blocking users from seeing Facebook  
+* SCADA (Supervisory control and data acquisition)  
+	- Older utility systems such as providing gas and electric power  
+	- May have to be sectioned off from the network to ensure no access  
+	- Embedded/Legacy systems  
+
+### Convert binary 
+* Write out 8 bits  
+* Put the 0 and 1 underneath each of the bits  
+* 255 is the max of 8 bits  
+
+### IPv4 address  
+* IPv4 is 32 bits, 4 values of 255 max  
+	- the first 8 bits can only go up to 223 (the far left one)  
+* The IANA gives out blocks of IP addresses to ISPs
+
+### Network Classes  
+* the first 8 bits max at 223 because of class D an E below  
+![alt text](./images/classful_ranges.PNG "missing classful_ranges.PNG")  
+
+
+### Figuring out the Network ID  
+Take the IP address, put it over the subnet mask. If the IP is above 255, use the IP number, if the subnet mask is 0, use the 0.  
+- EX: IP = 192.168.30.10  
+Subnet Mask = 255.255.255.0  
+Network ID is = 192.168.30.0   
+* Computers with the same Network ID are on the same switch (possibly) and can talk to eachother  
+* Devices with different Network IDs will need a router to communicate  
+
+
