@@ -393,3 +393,17 @@ Broadcast IP = 172.30.255.255
 * Lease Time: defines how long an IP address is "owned" by a host before it can be assigned to another host.   
 	- Available leases: identify how many addresses are still available from teh scope  
 	
+### DNS - Domain Name Service  
+* Types:
+	- Host names: identify a specific device in a network  
+		- Hostname = workstation01  
+	- Domain names: identify a specific network  
+		- Domain name = companyx.lan  
+	- Fully Qualified Domain Name (FQDN): identify a specific in a specific network  
+		- FQDN = workstation01.companyx.lan  
+* DNS are record based  
+![alt text](./images/dns_record_types.JPG)  
+	- CNAME: can give other aliases to a domain name  
+	- SPF: prevent some one from setting up a fake email account  
+	- DKIM: authentication token that can be used to filter out spam  
+	
