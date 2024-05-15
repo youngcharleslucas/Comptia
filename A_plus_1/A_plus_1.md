@@ -441,3 +441,34 @@ VLAN - created at Layer 2 on a Switch
 	- provide to small municipalities where cable or fiber is not available  
 	- providers use wireless access points deployed and at customer sites  
 	- Requirements: must be within coverage area  
+
+### Network Types  
+* LAN  
+* WLAN - wireless local area network  
+* MAN - Metropolitan Area Network  
+	- spread across a single city  
+	- Connections between the sites are often privately owned and managed by teh organizationa that use them  
+* WAN - Wide Area Network  
+	- Internet  
+	- Site-to-Site connections  
+* CAN - Campus Area Network  
+* PAN - Personal Area Network  
+	- usually made up of two devices  
+	- connected via cable or wireless  
+	- sending data from phone to computer  
+* SAN - Storage Area Network  
+![alt text](./images/san.JPG)  
+	- just for storing data  
+
+### Network Tools  
+* Crimper for RJ45 or RJ11
+* Cable stripper  
+* Wireless Analyzer - can use an app on your phone to check wireless signals  
+* Toner probe - identifies the other end of a twisted-pair cable  
+* Punch-Down Tool: Used for isntalling cables into a patch panel  
+* Cable Tester: Test to see if the lines in a cable line up from one connection to another connection  
+* Loobpack Plugs: test to see if the port can send an recieve signals  
+* Network Tab: inline way to read packes (WireShark?)  
+ 
+ 
+**Shielded Cat 6** - if an area is losing connection to the internet sporadically due to EMI, this is the most cost efficient way without sacraficing system performance  
