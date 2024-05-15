@@ -407,3 +407,37 @@ Broadcast IP = 172.30.255.255
 	- SPF: prevent some one from setting up a fake email account  
 	- DKIM: authentication token that can be used to filter out spam  
 	
+### VPN & VLAN
+Various Protocols for VPN  
+	- PPTP, L2TP, IPSec, OpenVPN, SSL-VPN  
+* Required to acces LAN over the Internet  
+
+VLAN - created at Layer 2 on a Switch 
+* Separates ports on a switch, logically   
+
+### Internet Connection Types  
+* DSL (Digital Service Line)  
+	- runs on traditional phone lines (PSTN - Public Switched Telephone Network)    
+	- Uses a DSL modem or DSL filter/splitter (prevent noise when connecting to a telephone to a DSL line)  
+* Cable  
+	- Uses DOCSIS (Data OVer Cable Service Internet Specification)  
+	- Described in FTTN (Fiber to the Node) service  
+	- Requires a Cabel Modem  
+* Fiber: over fiber optic cable  
+	- FIOS(Fiber Optic Service) are FTTP(Fiber to the PRemise)  
+	- Fastest service but also the most expensive  
+	- Requires: ONT(Optical Network Transceiver) to convert the fiber cable from provider to twisted pair to connect to router  
+* Satellite  
+	- Requirements:  
+		- connect to a satellite receiver via coax  
+		- clear view to space  
+	- suffers from high latency which makes it not good for  
+		- VoIP, video streaming, online gaming  
+* Cellular  
+	- Requirement:  
+		- within 4G/LTE or 5G area  
+		- Mobile device with a cellular radio installed  
+* WISP (Wireleass Internet Service Provider)  
+	- provide to small municipalities where cable or fiber is not available  
+	- providers use wireless access points deployed and at customer sites  
+	- Requirements: must be within coverage area  
