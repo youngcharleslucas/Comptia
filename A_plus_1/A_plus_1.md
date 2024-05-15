@@ -356,3 +356,40 @@ Broadcast IP = 172.30.255.255
 	- Loopback means talk to my own computer, just the same as pinging my own IP  
 	- Used to test a local software.  
 
+### IPv6  
+* 8 fields of 16 bit blocks using Hex  
+![alt text](./images/ipv6.JPG)  
+* 128 bits   
+* Prefix is the first 64 bits, assigned to an organization  
+	- The first 3 fields are the **Global routing prefix**  
+	- The fourth is the **Subnet-ID**  
+* Interface-ID: Last 64 bits of an IPv6 address and is used to identigy a unique interface on a host  
+* Condensing the IPv6  
+	- get rid of leading 0s  
+	- Condense several 0s to just one 0  
+	- Can remove single groups of 0 all together and just have '::', but this can only occur once  
+![alt text](./images/condense_ipv6.JPG)  
+
+### Types of IPv6  
+* **Unicast**: One to one, packet is sent to a single interface.  
+	- Global Unicast Address: publicly routable addresses used to communicate outside of a local network.  
+		- 2000::/3 was originally defined address space, but now all "non-defined" addresses are condsidered global unicast addresses.  
+	- Unique Local Addresses: non-publicly routable addresses used to communicate with-in a local network.  
+		- FC00::/7 but the 8th bit must always be enabled so FD00/8 is the actual useable defined space.  
+	- Link-Local addresses: replacement for Automatic Private IP Addresses (APIPA),  
+		- Every IPV6 host will have a link-local address  
+		- FE80::/10 
+		- Self assigned by the computer, could not connect to the DHCP server  
+* **Multicast**: One to may, packet is sent to may interfaces  
+	- FF00::/8 is the defined space for all IPv6 multicast  
+* **Loopback**: Used for testing, ::1  
+* **Anycast**: Ont to nearest, packet is sent to the nearest interface in terms of routing distance. Replaces bradcast from IPv4  
+
+### DHCP - Dynamic Host Configuration Protocol  
+* Scope: is the range of addresses the server can assign  
+* Exclusion Range: is the range of addresses the server can not assign  
+* Reservations: allow you to bind a MAC address to a specific IP address  
+	- Allow DHCP to consistently assign the same IP address to a device without having to manually configure a static IP address  
+* Lease Time: defines how long an IP address is "owned" by a host before it can be assigned to another host.   
+	- Available leases: identify how many addresses are still available from teh scope  
+	
