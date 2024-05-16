@@ -732,4 +732,49 @@ Transfer rate x Bits
 * Intel Virtualization Technology (Intel VT)  
 * AMD Virtualization Technology (AMD-V)  
 	- aka Secure Virtual Machine  
->>>>>>> 62aa08654c6715c3bb3d5e8f937aa9282178077c
+
+### Expansion Cards  
+* Sound Cards  
+* Video Card  
+	- SLI - slot that allows the card to attach to another card  
+* Capture Card - captures video from camera  
+* Network Interface Card  
+
+### PCI  
+* Peripheral Computer Interconnect  
+	- 32 bit, 266 MB/s Transfer  
+* PCIe (PCI express)  
+	- adds capabilites beyond what is installed in the motherboard  
+	- Sizes: x1, x4, x8, x12, x16, x32  
+	- Bigger slots mean more transfer  
+	- smaller cards will always work in bigger slots  
+* Mini PCIe - usually used for WIFI cards on mobile devices  
+
+
+### BIOS/UEFI  
+* Basic Input Output System  
+* Unified Extensible Firmware  
+	- secure boot  
+	- faster startup  
+	- Mouse and keyboard interactions  
+* ROM  
+* CMOS - Complementary Metal-Oxide Semiconductor  
+	- stores the Configuration changes done by the BIOS/UEFI  
+	- accessed with 'Delete' or 'F2' during boot  
+	- RTC: Realtime Clock, provides time to computer is in CMOS  
+	- Boot time password can be configured before OS loads  
+	- CMOS is located on volatile memory, 
+		- A battery (CR2032) maintains a power supply
+		- Removing the battery resets the CMOS to default settings  
+	- CMOS might also have a reset button on Motherboard  
+	- Clear CMOS jumper: another way to clear the system  
+	-CMOS Settings: 
+		- Wake-on-Lan (WoL) - the device will be started by another device  
+		- Boot priority  
+		- Enable/disable ports  
+		- Boot time password  
+		- Virtualization Support  
+		- CPU multipliers, voltage  
+		- RAM timing and voltages  
+		
+
