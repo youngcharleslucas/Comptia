@@ -474,7 +474,8 @@ VLAN - created at Layer 2 on a Switch
 **Shielded Cat 6** - if an area is losing connection to the internet sporadically due to EMI, this is the most cost efficient way without sacraficing system performance  
 
 
-# Hardware  
+# Hardware    
+![alt text](./images/mboard.png)  
 
 ### Network Cables  
 * Transimission Speeds  
@@ -588,7 +589,7 @@ Used in WAN
 
 * Thunderbolt  
 	- fastest  
-	- look like USB-C (version 3 and 4) but have a bolt symbol  
+	- look like USB-C (version 3 and 4) but have a bolt symbol   
 ![alt text](./images/thunder.png)  
 
 ### DDR - Double Data Rate  
@@ -609,7 +610,126 @@ Transfer rate x Bits
 	- DIMM (Dual Inline Memory Module): desktops and servers  
 	- SODIMM ( Small outline DIMM): notebooks, smaller device, laptops  
 * Memory Channeling:  
-	- allows the system to access more RAM simultaneously to improve performance  
-	![alt text](./images/channel.png)  
+	- allows the system to access more RAM simultaneously to improve performance   
+![alt text](./images/channel.png)  
+	- plug the ram into matching color to use channeling  
+* Single-sided vs Double Sided  
+	- motherboard may require one or the other  
+	- Single sided can be more expensive with no performance benefit  
+* Latency - measures how responsive RAM is when data is being read from it  
+	- Reported as CAS level or in milliseconds (lower is better)  
+* ECC (Error checking and Correcting) RAM: can detect and fix errors in data  
+	- makes a system more stable, not faster  
+	- commonly found in critical servers  
+* Registered and Buffered Memory: includes extra chips to allow for more consistent communication between the memory controller and RAM  
+	- Only found in high memory capacity servers  
+	- Unbuffered memory is common for most desktop and portable systems  
+
+### Hard drive terms  
+* Capacity: how much data is stored  
+* Performance: measured in bps, Mbps, Gbps  
+* Interface: how drive connects to system (SATA, USB)  
+* Form Factor: dimensions of the disk  
+
+### Types of drives  
+* HDD - hard disk drive  
+	- Form Factors: 2.5 and 3.5"  
+	- Connect on SATA  
+	- Know the rpms:  
+![alt text](./images/hdd_rpm.png)  
+* External Drives:   
+![alt text](./images/extern.png)  
+	- 3.5" drives require power from outlet  
+	- 2.5" drives can be powered from port  
+
+### RAID  
+* Redundant Array of Independent Disk  
+* Requires Hardware or Software:
+	- Hardware:
+		- Can be built into the motherboard
+		- can be added with RAID controller card  
+		- USB/Thunderbolt external RAID enclosure  
+	- Software: 
+		- Windows: Dynamic Disk and Storage Spaces  
+		- macOS: Disk Utility can be used to Create RAID array  
+		- Linux: Built-in to the Linux Kernel as a standard  
+	- JBOD (just a bunch of disks) are disks not working as RAID  
+* RAID 0: 
+	- No data redundancy, if one goes dead, all memory is lost  
+	- It is fast for writting  
+* RAID 1: 
+	- Mirroring, duplicates across both disks  
+	- Fast recovery  
+	- Disadvantage, 
+* RAID 5:  
+	- Parity data: spread across three disks. If one disk is lost, the other two can re-create the lost drive  
+	- Parity is if one of the disk is lost.  
+	- But overall fast speed  
+	- But has larger storage than RAID 1  
+* RAID 10: 
+	- RAID 0 + 1
+	- Requires 4 hard drives  
+
+### SSD  
+* Solid State Drives - array of flash chips  
+	- ideal for mobile since no moving parts  
+	- limited amount of writes  
+* Form Factors: 
+	- SATA  
+	- M.2 
+		- Supports PCIe or SATA  
+		- NVMe runs on PCIe Bus, is faster  
+
+### Cooling Components  
+* Throttling: done by a CPU, reduces power consumption to prevent heat  
+	- Done through reducing clock speed  
+	- Intel calls it 'SpeedStep'  
+	- AMD calls it 'Cool'n'Quiet'  
+* Overclocking - increase the multiplier to get better performance  
+* Passive Cooling	
+	- Thermal Compounds: paste that assists in removing heat  
+	- Thermal Pads: not as good as paste, but last longer  
+		- Commonly used on memory chips  
+	- Heat Sinks: blocks of metal that disperse the heat  
+* Active Cooling
+	- Fans  
+	- Bigger Case fans are quietter  
+* Liquid cooling  
+	- quiet  
 	
+### CPU  
+* Architecture  
+	- x86/x64 has a large software compatibility library   
+	- ARM - limited software compatability library  
+* style
+	- PGA: Pin Grid Array Socket  
+		- has male pins  
+	- LGA: Land Grid Array Socket  
+		- has femal holes  
+		- Used mostly by Intel
+* Multi-Socket Motherboards  
+	- some server motherboards have multiple CPU sockets   
+
+![alt text](./images/socket_processor.png)  
+
+* Mobile CPU  
+	- BGA (Ball Grid Array) Socket  
+		- no connector, balls of soder connect cpu  
 	
+![alt text](./images/bit_processor.png)   
+** x86 is a 32 bit cpu, x64 is a 64 bit cpu**  
+* 1000MHz = 1GHz  
+
+### Multithreading and Multicore  
+* Hyper-Threading: an Intel based tech which allows a CPU core to process multiple instructions instantaneously  
+	- Referred to as Simultaneous multithreading (SMT) by other manufacturers like AMD  
+* Multicore: processor is a single chip that has two or more processor cores attached  
+	- enhanced performance and reduced power consumption  
+	- Dual to Ocat-Core processors are available  
+
+### Virtualization  
+* System hosts VMs  
+* Can be enabled or disabled in BIOS/UEFI  
+* Intel Virtualization Technology (Intel VT)  
+* AMD Virtualization Technology (AMD-V)  
+	- aka Secure Virtual Machine  
