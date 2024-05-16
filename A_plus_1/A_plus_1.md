@@ -422,7 +422,7 @@ VLAN - created at Layer 2 on a Switch
 * Cable  
 	- Uses DOCSIS (Data OVer Cable Service Internet Specification)  
 	- Described in FTTN (Fiber to the Node) service  
-	- Requires a Cabel Modem  
+	- Requires a Cable Modem  
 * Fiber: over fiber optic cable  
 	- FIOS(Fiber Optic Service) are FTTP(Fiber to the PRemise)  
 	- Fastest service but also the most expensive  
@@ -473,10 +473,263 @@ VLAN - created at Layer 2 on a Switch
  
 **Shielded Cat 6** - if an area is losing connection to the internet sporadically due to EMI, this is the most cost efficient way without sacraficing system performance  
 
-## Hardware  
+# Hardware    
+![alt text](./images/mboard.png)  
 
 ### Network Cables  
-*Transmission Speeds  
-	- Copper Cable: 40 Gigabits  
-	- Fiber Cables: 100 Gigabits
+* Transimission Speeds  
+	- Copper cables - 40 GBs  
+	- Fiber Cables - 100 GBs  
+* Transmission Distance  
+	- Copper Cables - 1,100 meters/3,609 ft  
+	- Fiber - 40km/25 miles  
+* Attenuation - loss of signal strength  
+*Noise Immunity  
+	- EMI (Electro-Magnetic Interference)  
+		- is a condition when signals from a device or cable leak out and disrupt signals of another device  
+		- Copper cables are affected. Optical cables are not  
 
+### Twisted Pair Cable  
+* 4 pairs of twisted cables (8 wires total)  
+* STP (Shield Twisted Pair): has sheild to protect against EMI  
+	- Direct-burial cable: special type of electrical wiring or cable that is designed to be buried in a trench  
+	- Has metallic shield 
+* UTP (Unshielded Twisted Pair): Does not have shielding
+*Twisted Pair Connectors
+	- RJ11: used with phones  
+		- 4 pin 
+	- RJ45: used in computer networks  
+		- 8 pin   
+![alt text](./images/twisted_cat.png)  
+
+
+### Coax Cable  
+*  RJ6 most common  
+	- Very well shielded against EMI  
+	- Supports longer distance  
+	- More expensive than twisted pair  
+	- Long transmission 1,100 m  
+* Connectors  
+	- BNC (British naval connector) 
+		- has a secure lock
+	- F connector 
+		- used for modems  
+
+### Fiber Optic Cable  
+Used in WAN  
+* Advantages 
+	- No EMI issues  
+	- Long transmission  
+	- Fast Speed 255 Tbps  
+* Disadvantage  
+	- Most expensive  
+	- difficult to install  
+	- Needs expensive tools  
+	- Can't easily repair in the field  
+* Connectors  
+	- ST (straight tip) connector  
+		- BNC style  
+		- Single mode fiber (SMF) 
+		- used in 80s and 90s  
+	- LC (Lucent Connection/local connection/little connector)  
+		- snap in style  
+		- small form-factor connector  
+		- Used in SMF and MMF installations  
+	- SC Connector (standard connector / square connector)  
+		- snap in styles  
+		- used in SMF and MMF  
+	- Dual LC  
+		- used in SMF and MMF  
+![alt text](./images/cable_specs.png)  
+
+### Hard Drive cable  
+* SATA (Serial ATA)  
+	- connect devices such as HDD, SSD, and optical drives  
+	- either end can connect to the motherboard  
+	- Mini SATA (mSATA) smaller version found in SFF  
+	- Replaces PATA/IDE  
+	- eSATA (external SATA)  
+	
+| TYPE | MAX SPEED |
+| -------- | ----------|
+| SATA 1 | 1.5 Gbps / 150 MB/s |  
+| SATA 2 | 3 Gbps / 300MB/s |  
+| SATA 3 | 6 Gbps / 600 MB/s |  
+
+* Old Drive Cables  
+	- SCSI (scuzzy)  
+		80 pin, 320  
+	- IDE/PATA  
+		- ribbon cable  
+		- master/slave configure  
+		- i connector supports 2 drives  
+### Video Connections  
+* Display Port (DP) rectangle with one corner missing  
+	- HD and UHD  
+	- popularized by Apple  
+	- can combine with USB and Thunderbolt   
+	- very high refresh rate  
+* HDMI ( High-Definition Multimedia Interface)  
+	- an active HDMI cable is needed for connections greater than 25 ft  
+	- HDCP (High Definition Copy Protection)  
+		- support is required for some HD and UHD content  
+	- HD and UHD, video and audio  
+* VGA - old school  
+	- 3 rows of 5 pins, blue color  
+* DVI: Digital Video Interface    
+	- Only video, no audio  
+
+### Connector Types  
+* Video Adapters - cannot convert analog to digital  
+
+* USB  
+	- 127 devices can be plugged into a USB  
+![alt text](./images/usb_types.png)  
+
+* Thunderbolt  
+	- fastest  
+	- look like USB-C (version 3 and 4) but have a bolt symbol   
+![alt text](./images/thunder.png)  
+
+### DDR - Double Data Rate  
+* advanced version of SDRAM (synchronous dynamic random-access memory)  
+* Different types of DDR are not compatible with eachother  
+* Performance rating:  
+DDR-266 = PC-2100  
+266 x 8 = 2128 Mbps  
+Transfer rate x Bits  
+
+### RAM  
+* SRAM - directly soldered to the component  
+	- Static RAM  
+	- Very Fast  
+	- in the CPU cache
+* DRAM - detachable to motherboard  
+* DIMM vs SODIMM: 
+	- DIMM (Dual Inline Memory Module): desktops and servers  
+	- SODIMM ( Small outline DIMM): notebooks, smaller device, laptops  
+* Memory Channeling:  
+	- allows the system to access more RAM simultaneously to improve performance   
+![alt text](./images/channel.png)  
+	- plug the ram into matching color to use channeling  
+* Single-sided vs Double Sided  
+	- motherboard may require one or the other  
+	- Single sided can be more expensive with no performance benefit  
+* Latency - measures how responsive RAM is when data is being read from it  
+	- Reported as CAS level or in milliseconds (lower is better)  
+* ECC (Error checking and Correcting) RAM: can detect and fix errors in data  
+	- makes a system more stable, not faster  
+	- commonly found in critical servers  
+* Registered and Buffered Memory: includes extra chips to allow for more consistent communication between the memory controller and RAM  
+	- Only found in high memory capacity servers  
+	- Unbuffered memory is common for most desktop and portable systems  
+
+### Hard drive terms  
+* Capacity: how much data is stored  
+* Performance: measured in bps, Mbps, Gbps  
+* Interface: how drive connects to system (SATA, USB)  
+* Form Factor: dimensions of the disk  
+
+### Types of drives  
+* HDD - hard disk drive  
+	- Form Factors: 2.5 and 3.5"  
+	- Connect on SATA  
+	- Know the rpms:  
+![alt text](./images/hdd_rpm.png)  
+* External Drives:   
+![alt text](./images/extern.png)  
+	- 3.5" drives require power from outlet  
+	- 2.5" drives can be powered from port  
+
+### RAID  
+* Redundant Array of Independent Disk  
+* Requires Hardware or Software:
+	- Hardware:
+		- Can be built into the motherboard
+		- can be added with RAID controller card  
+		- USB/Thunderbolt external RAID enclosure  
+	- Software: 
+		- Windows: Dynamic Disk and Storage Spaces  
+		- macOS: Disk Utility can be used to Create RAID array  
+		- Linux: Built-in to the Linux Kernel as a standard  
+	- JBOD (just a bunch of disks) are disks not working as RAID  
+* RAID 0: 
+	- No data redundancy, if one goes dead, all memory is lost  
+	- It is fast for writting  
+* RAID 1: 
+	- Mirroring, duplicates across both disks  
+	- Fast recovery  
+	- Disadvantage, 
+* RAID 5:  
+	- Parity data: spread across three disks. If one disk is lost, the other two can re-create the lost drive  
+	- Parity is if one of the disk is lost.  
+	- But overall fast speed  
+	- But has larger storage than RAID 1  
+* RAID 10: 
+	- RAID 0 + 1
+	- Requires 4 hard drives  
+
+### SSD  
+* Solid State Drives - array of flash chips  
+	- ideal for mobile since no moving parts  
+	- limited amount of writes  
+* Form Factors: 
+	- SATA  
+	- M.2 
+		- Supports PCIe or SATA  
+		- NVMe runs on PCIe Bus, is faster  
+
+### Cooling Components  
+* Throttling: done by a CPU, reduces power consumption to prevent heat  
+	- Done through reducing clock speed  
+	- Intel calls it 'SpeedStep'  
+	- AMD calls it 'Cool'n'Quiet'  
+* Overclocking - increase the multiplier to get better performance  
+* Passive Cooling	
+	- Thermal Compounds: paste that assists in removing heat  
+	- Thermal Pads: not as good as paste, but last longer  
+		- Commonly used on memory chips  
+	- Heat Sinks: blocks of metal that disperse the heat  
+* Active Cooling
+	- Fans  
+	- Bigger Case fans are quietter  
+* Liquid cooling  
+	- quiet  
+	
+### CPU  
+* Architecture  
+	- x86/x64 has a large software compatibility library   
+	- ARM - limited software compatability library  
+* style
+	- PGA: Pin Grid Array Socket  
+		- has male pins  
+	- LGA: Land Grid Array Socket  
+		- has femal holes  
+		- Used mostly by Intel
+* Multi-Socket Motherboards  
+	- some server motherboards have multiple CPU sockets   
+
+![alt text](./images/socket_processor.png)  
+
+* Mobile CPU  
+	- BGA (Ball Grid Array) Socket  
+		- no connector, balls of soder connect cpu  
+	
+![alt text](./images/bit_processor.png)   
+** x86 is a 32 bit cpu, x64 is a 64 bit cpu**  
+* 1000MHz = 1GHz  
+
+### Multithreading and Multicore  
+* Hyper-Threading: an Intel based tech which allows a CPU core to process multiple instructions instantaneously  
+	- Referred to as Simultaneous multithreading (SMT) by other manufacturers like AMD  
+* Multicore: processor is a single chip that has two or more processor cores attached  
+	- enhanced performance and reduced power consumption  
+	- Dual to Ocat-Core processors are available  
+
+### Virtualization  
+* System hosts VMs  
+* Can be enabled or disabled in BIOS/UEFI  
+* Intel Virtualization Technology (Intel VT)  
+* AMD Virtualization Technology (AMD-V)  
+	- aka Secure Virtual Machine  
+>>>>>>> 62aa08654c6715c3bb3d5e8f937aa9282178077c
