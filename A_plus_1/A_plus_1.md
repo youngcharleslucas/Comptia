@@ -422,7 +422,7 @@ VLAN - created at Layer 2 on a Switch
 * Cable  
 	- Uses DOCSIS (Data OVer Cable Service Internet Specification)  
 	- Described in FTTN (Fiber to the Node) service  
-	- Requires a Cabel Modem  
+	- Requires a Cable Modem  
 * Fiber: over fiber optic cable  
 	- FIOS(Fiber Optic Service) are FTTP(Fiber to the PRemise)  
 	- Fastest service but also the most expensive  
@@ -472,3 +472,35 @@ VLAN - created at Layer 2 on a Switch
  
  
 **Shielded Cat 6** - if an area is losing connection to the internet sporadically due to EMI, this is the most cost efficient way without sacraficing system performance  
+
+
+# Hardware  
+
+### Network Cables  
+* Transimission Speeds  
+	- Copper cables - 40 GBs  
+	- Fiber Cables - 100 GBs  
+* Transmission Distance  
+	- Copper Cables - 1,100 meters/3,609 ft  
+	- Fiber - 40km/25 miles  
+* Attenuation - loss of signal strength  
+*Noise Immunity  
+	- EMI (Electro-Magnetic Interference)  
+		- is a condition when signals from a device or cable leak out and disrupt signals of another device  
+		- Copper cables are affected. Optical cables are not  
+
+### Twisted Pair Cable  
+* 4 pairs of twisted cables (8 wires total)  
+* STP (Shield Twisted Pair): has sheild to protect against EMI  
+	- Direct-burial cable: special type of electrical wiring or cable that is designed to be buried in a trench  
+	- Has metallic shield 
+* UTP (Unshielded Twisted Pair): Does not have shielding
+*Twisted Pair Connectors
+	- RJ11: used with phones  
+		- 4 pin 
+	- RJ45: used in computer networks  
+		- 8 pin  
+![alt text](./images/twisted_cat.PNG)  
+
+
+### Coax Cable  
