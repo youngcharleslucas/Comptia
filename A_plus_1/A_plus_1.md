@@ -500,7 +500,7 @@ VLAN - created at Layer 2 on a Switch
 		- 4 pin 
 	- RJ45: used in computer networks  
 		- 8 pin  
-![alt text](./images/twisted_cat.PNG)  
+![alt text](./images/twisted_cat.png)  
 
 
 ### Coax Cable  
