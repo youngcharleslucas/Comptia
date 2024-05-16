@@ -564,3 +564,52 @@ Used in WAN
 		- master/slave configure  
 		- i connector supports 2 drives  
 ### Video Connections  
+* Display Port (DP) rectangle with one corner missing  
+	- HD and UHD  
+	- popularized by Apple  
+	- can combine with USB and Thunderbolt   
+	- very high refresh rate  
+* HDMI ( High-Definition Multimedia Interface)  
+	- an active HDMI cable is needed for connections greater than 25 ft  
+	- HDCP (High Definition Copy Protection)  
+		- support is required for some HD and UHD content  
+	- HD and UHD, video and audio  
+* VGA - old school  
+	- 3 rows of 5 pins, blue color  
+* DVI: Digital Video Interface    
+	- Only video, no audio  
+
+### Connector Types  
+* Video Adapters - cannot convert analog to digital  
+
+* USB  
+	- 127 devices can be plugged into a USB  
+![alt text](./images/usb_types.png)  
+
+* Thunderbolt  
+	- fastest  
+	- look like USB-C (version 3 and 4) but have a bolt symbol  
+![alt text](./images/thunder.png)  
+
+### DDR - Double Data Rate  
+* advanced version of SDRAM (synchronous dynamic random-access memory)  
+* Different types of DDR are not compatible with eachother  
+* Performance rating:  
+DDR-266 = PC-2100  
+266 x 8 = 2128 Mbps  
+Transfer rate x Bits  
+
+### RAM  
+* SRAM - directly soldered to the component  
+	- Static RAM  
+	- Very Fast  
+	- in the CPU cache
+* DRAM - detachable to motherboard  
+* DIMM vs SODIMM: 
+	- DIMM (Dual Inline Memory Module): desktops and servers  
+	- SODIMM ( Small outline DIMM): notebooks, smaller device, laptops  
+* Memory Channeling:  
+	- allows the system to access more RAM simultaneously to improve performance  
+	![alt text](./images/channel.png)  
+	
+	
