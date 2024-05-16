@@ -472,3 +472,11 @@ VLAN - created at Layer 2 on a Switch
  
  
 **Shielded Cat 6** - if an area is losing connection to the internet sporadically due to EMI, this is the most cost efficient way without sacraficing system performance  
+
+## Hardware  
+
+### Network Cables  
+*Transmission Speeds  
+	- Copper Cable: 40 Gigabits  
+	- Fiber Cables: 100 Gigabits
+
