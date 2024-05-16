@@ -499,8 +499,68 @@ VLAN - created at Layer 2 on a Switch
 	- RJ11: used with phones  
 		- 4 pin 
 	- RJ45: used in computer networks  
-		- 8 pin  
+		- 8 pin   
 ![alt text](./images/twisted_cat.png)  
 
 
 ### Coax Cable  
+*  RJ6 most common  
+	- Very well shielded against EMI  
+	- Supports longer distance  
+	- More expensive than twisted pair  
+	- Long transmission 1,100 m  
+* Connectors  
+	- BNC (British naval connector) 
+		- has a secure lock
+	- F connector 
+		- used for modems  
+
+### Fiber Optic Cable  
+Used in WAN  
+* Advantages 
+	- No EMI issues  
+	- Long transmission  
+	- Fast Speed 255 Tbps  
+* Disadvantage  
+	- Most expensive  
+	- difficult to install  
+	- Needs expensive tools  
+	- Can't easily repair in the field  
+* Connectors  
+	- ST (straight tip) connector  
+		- BNC style  
+		- Single mode fiber (SMF) 
+		- used in 80s and 90s  
+	- LC (Lucent Connection/local connection/little connector)  
+		- snap in style  
+		- small form-factor connector  
+		- Used in SMF and MMF installations  
+	- SC Connector (standard connector / square connector)  
+		- snap in styles  
+		- used in SMF and MMF  
+	- Dual LC  
+		- used in SMF and MMF  
+![alt text](./images/cable_specs.png)  
+
+### Hard Drive cable  
+* SATA (Serial ATA)  
+	- connect devices such as HDD, SSD, and optical drives  
+	- either end can connect to the motherboard  
+	- Mini SATA (mSATA) smaller version found in SFF  
+	- Replaces PATA/IDE  
+	- eSATA (external SATA)  
+	
+| TYPE | MAX SPEED |
+| -------- | ----------|
+| SATA 1 | 1.5 Gbps / 150 MB/s |  
+| SATA 2 | 3 Gbps / 300MB/s |  
+| SATA 3 | 6 Gbps / 600 MB/s |  
+
+* Old Drive Cables  
+	- SCSI (scuzzy)  
+		80 pin, 320  
+	- IDE/PATA  
+		- ribbon cable  
+		- master/slave configure  
+		- i connector supports 2 drives  
+### Video Connections  
