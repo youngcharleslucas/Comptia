@@ -776,5 +776,27 @@ Transfer rate x Bits
 		- Virtualization Support  
 		- CPU multipliers, voltage  
 		- RAM timing and voltages  
-		
 
+### Power Supply Unit  
+* PSU is rated in watts  
+	- Comptia recommends 500 watts as standard  
+	- match or get one with higher wattage  
+* Non-modular PSU: all cables are permenantly attached  
+* Modular PSU: don't have any cables attached, just connectors  
+* Redundant power supplies  
+* ATX and STX ??
+* Power draws:
+	- Molex: 5v, 12v 
+		- fans, IDE drives  
+	- SATA: 5v, 12v, 3.3v  
+		- for SATA only  
+	- PCIe: 
+		- 6 pin, 3 rails of 12v  
+		- 8 pin, 4 rails of 12v  
+	- ATX: 5v, 12v, 3.3v 
+		- powers the motherboard  
+		- 20 or 24 pins  
+	- ATX12v: 4 pin, known as P4 connector  
+		- connects motherboard to give power to CPU  
+	
+		
