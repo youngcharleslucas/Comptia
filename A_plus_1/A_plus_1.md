@@ -936,10 +936,177 @@ Transfer rate x Bits
 | No beep | If everything seems to be functioning correctly there may be a problem with the 'bee' itself. The system will normally beep on short beep |  
 | One long, two short beeps | Video Card Failure |  
 
-<dl>
-	<dt>First Term</dt>  
-	<dd>This is the term</dd>
-	<dt>Seconde Term</dt>  
-	<dd>definition one</dd>
-	<dd>definition two</dd>
-</dl>
+- Proprietary crash screens (blue screen of death (BSOD or pinwheel))  
+	- Hardware  
+		- RAM, failing HD, wrong video card driver  
+	- Software  
+		- OS is corrupt, Windows doesn't know how to handle error  
+- Black Screen  
+	- monitor the power  
+	- plug in  
+	- connections  
+	- correct video port  
+- No power  
+	- is surge turned on  
+	- does surge work?  
+	- jumpers are connected to the motherboard correctly  
+- Sluggish performance  	
+	- not enough memory  
+	- slow hard drive  
+	- slow processor  
+	- corrupt application  
+	- corrupt OS  
+	- Virus or malware  
+	- Not using the correct drivers  
+- Overheating  
+	- check all fans  
+	- heatsing on the processor is working  
+	- replace thermal paste  
+	- poor ventilation  
+	- clean out dust  
+- Burn Smelling 
+	- turn off the computer  
+	- unplug from the wall 
+	- look for black spots  
+- Intermittent shutdown  
+	- overheating issue  
+	- memory is failing  
+	- OS is corrupt  
+- Application Crash  
+	- un-install and re-install  
+	- application is corrupt  
+	- memory is failing  
+	- Look at Event Viewer  
+- Grinding Noise  
+	- Only fans or hard drives make this noise  
+- Capacitory swelling  
+	- replace motherboard  
+- Inaccurate system date/time  
+	- Generally the BIOS batery is dead  
+
+### Drives and RAID  
+
+- LED status indicators  
+- Grinding noises and Clicking Sounds  
+	- back up right away  
+- Device not found  
+	- Drive is dead 
+	- Boot up config wrong 
+	- OS is corrupt  
+- RAID failure  
+	- Software will tell you which one failed  
+	- SMART failure  
+		- Self-monitorying, Analysis, and Reporting Technology  
+		- detect and report various indicators fo drive  
+	- IOPS ( Extended read/write times and Input/output operations per second)  
+		- Looks at how fast the drives are working   
+- Missing drive  
+	- drive is dead  
+	- BIOS misconfigured  
+	- OS corrupt  
+	- unplug and replug  
+
+### Fixing display issues  
+	
+- Incorrect data source  
+	- Check the cable is plugged in correct port  
+	- Configure settings for the right port  
+- Physical cable  
+- Projector has burned out bulb  
+- Fuzzy images  
+	- check cables  
+	- native resolution: ensure the computer is set to the monitor recommended resolution  
+- Display burnout  
+	- image is left on screen too long  
+- Dead pixels  
+	- black dot on screen  
+- Flashing screen 
+	- check cable  
+- Incorrect color display  
+	- check settings  
+- Dim image  
+	- turn up brightness 
+	- replace monitor  
+	- mobile computers, replace display  
+- Intermittent projector shutdown  
+	- over heating  
+	- ECO mode, shut off when nothing is moving  
+
+### Mobile devices  
+
+- Poor battery health  
+	- battery is dying  
+	- too many applications at once  
+	- running the phone in high performance  
+- Swollen battery  
+	- shutdown and replace battery  
+- Broken Screen  
+- Improper Charging  
+	- check cable  
+	- check port  
+	- replace battery  
+- Poor connectivity  
+	- check service  
+- Overheating  
+	- too many things running  
+	- have next to a heater 
+- Digitizer  
+	- touch screen not working  
+- Malware issue  
+	- factory reset  
+- Cursor drift  
+	- reset configuration  
+
+### Troubleshooting Printers  
+
+- Lines down the printer pages  
+	- the drum has something wrong on it  
+	- replace ink jet 
+- Garbled words on print  
+	- wrong driver  
+	- inspect print heads on inkjet  
+- Toner not fusing to paper  
+	- assembly roller issue  
+- Paper jam
+	- check rollers  
+	- ensure right type of paper  
+- Incorrect paper size  
+	- check application settings  
+- Multiple prints in queue  
+	- Print spooler is jamed  
+	- restart print spooler
+		- Windows => Services => Print Spooler => Restart
+- Double/echo images  
+	- clean drum  
+	- Replace fuser unit  
+- Incorrect colors  
+	- cartridges in right location  
+
+### Wired and Wireless Connections  
+
+- Intermittent wireless connectivity  
+	- reboot  
+- Slow network speeds 
+	- distance  
+	- too many devices  
+- Limited connectivity  
+	- lan but not internet  
+	- check the IP and configuration  
+- Jitter  
+	- Ensure the company sets up QoS, Quality of Service  
+- Poor Voice over Internet Protocol (VoIP)/ Jitter  
+	- Low bandwidth
+	- drop packets  
+	- Jitter: data comes in at unexpected rates  
+	- QoS to prioritize traffic
+- Port Flapping  
+	- Interface is going up and down  
+	- Physical problem, broken pin, replace cable  
+- High latency  
+	- slow speeds  
+	- Might affect VoIP  
+	- Implement QoS  
+
+
+
+
