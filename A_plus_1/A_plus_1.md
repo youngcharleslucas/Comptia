@@ -936,9 +936,10 @@ Transfer rate x Bits
 | No beep | If everything seems to be functioning correctly there may be a problem with the 'bee' itself. The system will normally beep on short beep |  
 | One long, two short beeps | Video Card Failure |  
 
-First Term  
-: This is the definition  
-
-Second term 
-: definition to second term 
-	
+<dl>
+	<dt>First Term</dt>  
+	<dd>This is the term</dd>
+	<dt>Seconde Term</dt>  
+	<dd>definition one</dd>
+	<dd>definition two</dd>
+</dl>
