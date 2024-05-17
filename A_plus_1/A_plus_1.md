@@ -799,4 +799,146 @@ Transfer rate x Bits
 	- ATX12v: 4 pin, known as P4 connector  
 		- connects motherboard to give power to CPU  
 	
-		
+### Multifunction Devices  
+* Printer (MFD, multi function device) 
+	- Faxing  
+	- Printing  
+	- scanning  
+	- CMYK (cyan, magenta, yellow, key/black)  
+* PCL vs PostScript  
+	- PCL by HP  
+	- PostScript by Adobe  
+	- How printers communicate to devices  
+* Print share - small home network printing method  
+* Print Server - larger busines option  
+* Finisher  
+	- Duplexer  
+	- Stapler  
+	- Binder  
+	- multiple prints  
+
+### Laser Printer Maintenance Kit  
+* Contains: 
+	- Fuser unit  
+	- Transfer Roller  
+	- Paper Feed Roller / Separation Roller  
+	- Pickup Roller  
+
+### Inkjet Printer  
+* Afordable  
+* Cartridges are expensive  
+* every time you replace the cartridge, re calibrate the printer  
+
+### Impact printer  
+* Prints by with ink ribbon that impacts  
+* Can print on carbon backed paper  
+* Dot matrix or daisey wheel  
+
+
+### Thermal Printer  
+* Printed on heat sensitive paper  
+* No ink  
+* used for receipts  
+* Has heating element  
+* Receipts that want to be kept for a long time must be photo copied or scanned  
+
+### 3D printers  
+* Filament  
+	- FDM, .1mm-.3mm, Extruder
+* Resin (SLA)
+	- Hardens when light hits the resin  
+	- resolution: .025mm -.3mm  
+
+## Virtualization and Cloud  
+
+### Cloud Charactersitics  
+* Shared Resources  
+* Metered Utilization  
+* Rapid Elasticity  
+* High Availability  
+* File Synchronization  
+
+### Cloud Deployment Models  
+* Public Cloud  
+	- Third-party hosts  
+	- Amazon Elastic Cloud Compute (EC2)  
+* Private Cloud  
+	- third party hosts for single client  
+	- Driven by security concerns and compliance  
+* Community Cloud  
+	- multi-tenant  
+* Hybrid Cloud  
+
+### Service Models  
+* SaaS, PaaS, IaaS  
+
+### Virtual Box  
+- Application layer virtualization
+- Download  
+- Dynamically allocate space (only allot space when needed)  
+
+* Virtualization  
+	- power saving  
+	- Hardware consolidation  
+	- System Management and security  
+* Desktop Virtualization  
+	- Virtual Desktop Infrastructure (VDI)  
+	- A whole bunch of virtual computers on one computer  
+* Client-side Virtualization  
+	- sandbox  
+	- Test development  
+	- Application layer virtualization  
+		- legacy software/os  
+		- Cross-platform vitualization
+* Hypervisor  
+- Software that is used to create, run, and manage VMs  
+- Two types:  
+	- Type I: run directly on the hardware without an OS  
+		- bare metal virtualization  
+		- prioritzes resources for the VM  
+	- Type II: runs within an OS  
+		- Share resources between teh host and VMs  
+
+![alt text](./images/hyper_types.png)  
+
+
+![alt text](./images/hyper_compare.png)  
+
+
+## Troubleshooting 
+
+### Troubleshooting Steps  
+1. Identify the Problem  
+	- Gather information from the user  
+	- what environmental changes occured  
+2. Establish a theory of probably cause  
+3. Test the theory to determine the cause  
+	- once theory is determined, determine next steps to solve the problem  
+	- if not confirmed, get new theory  
+4. Establish a plan of action to resolve the problem  
+	- refer to the vendor's instruction for guidance  
+5. Verify full system functionality and , if applicable, implement preventive measures  
+6. Document the findings, actions and outcomes  
+ 
+### Memory and power issues  
+
+- Power-on self-test (POST) beeps  
+	- checks a computer's internal hardware for compatibility and connection before starting the remainder of the boot process  
+	- If the computer passes the POST, the computer may give a single beep  
+	- if the computer fails the POST, the computer may generate a beep code telling teh user the source of the problem  
+
+| Beeps | Meaning |  
+| :--- | :---: |   
+| steady, short beeps | Power supply may be bad |  
+| Long continuous beep tone | memory failure |  
+| Steady, long beeps | Power supply failure |  
+| No beep | Power supply bad, system not plugged in, power not turned on |  
+| No beep | If everything seems to be functioning correctly there may be a problem with the 'bee' itself. The system will normally beep on short beep |  
+| One long, two short beeps | Video Card Failure |  
+
+First Term  
+: This is the definition  
+
+Second term 
+: definition to second term 
+	
