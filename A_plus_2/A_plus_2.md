@@ -97,9 +97,7 @@ Versions:
 	- `net user userName password /add`
 - `pathping` performs a ping and a traceroute at the same time  
 - `nslookup` identifies the current DNS server and displays IP Addresses for a provided name  
-- `hostname` displays a computer's hostname  
-
-### Network Commands  
+- `hostname` displays a computer's hostname   
 
 - `ping` uses ICMP to return the status of a unicast  
 	- `-n` changes the number of pings sent  
@@ -115,7 +113,7 @@ Versions:
 	- `/displaydns` displays the local DNS cache  
 	- `/flushdns` clears the local DNS cache  
 
-## Disk Tools and the registry  
+### Disk Tools and the registry  
 
 - Disk Cleanup (clanmgr.exe)  
 	- Files in teh Recycle Bin  
@@ -139,6 +137,56 @@ Versions:
 	- HKEY_CURRENT_USER: Stores settings for he individual users  
 	- HKEY_LOCAL_MACHINE: Stores settings for all devices that have been installed or removed form the system  
 	- HKEY_CURRENT_CONFIG: Stores settings for individual devices when multiple of the same type of device have been installed  
+
+### Event Viewer (eventvwr.msc)  
+
+Displays logs of timestamped events which can be used to assist with troubleshooting  
+
+- Windows Logs  
+	- System: list operating system events  
+	- Security: list security events  
+	- Application: list application events  
+	
+- Icons  
+	- Red = Error  
+	- Yellow = Warning  
+	- White = Informational  
+	
+### Microsoft Managment Console (mmc)  
+
+Put all the management tools in one place.  
+Create a custom toolbox of useful utilities referred to as "Snap-ins"  
+
+- Snap-ins are the other consoles that are available elsewhere like the Device Manager or Disk Management  
+- `mmc` command can be used to launch the Microsoft Management Console  
+
+### System info and Configuration  
+
+System information is for viewing detailed information on system hardware and software  
+
+- `msinfo32` command can be used to launch the System Information utility  
+	- Hardware Resources : identify hardware conflicts and addresses  
+	- Components: Identify driver details and hardware capabilities  
+	- Software Environment: Identify software details  
+	
+- `msconfig.exe` System Configuration  
+	- General: change startup type between Nromal, Selective, or Diagnostic types  
+	- Boot: change multiboot order  
+	- Services: Enable or disable services  
+	- Startup: Links ro the Startup tab in the task manager  
+	- Tools: Collection of useful tools  
+
+### Task Manager  
+
+- Processes: 
+	- Displays all running processes including background processes  
+	- Non-responsive processes can be closed here  
+- Performance: Displays performance graphs  
+- Users:
+	- Displays currently logged-in users  
+	- It is possible to log out users in this tab  
+- Startup: Disable or enable auto-starting applications  
+- `taskmgr` can be used to launch the task manager via a run box  
 
 
 
