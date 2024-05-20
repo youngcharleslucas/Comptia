@@ -99,6 +99,47 @@ Versions:
 - `nslookup` identifies the current DNS server and displays IP Addresses for a provided name  
 - `hostname` displays a computer's hostname  
 
+### Network Commands  
+
+- `ping` uses ICMP to return the status of a unicast  
+	- `-n` changes the number of pings sent  
+	- `-l` changes the size of the ping packet  
+	- `-t` pings continuously  
+	- `-4` force an IPv4 ping  
+	- `-6` force an IPv6 ping  
+	
+- `ipconfig` Displays ingerface configurations  
+	- `/all` displays more detailed information  
+	- `/renew` request configurations from a DHCP server  
+	- `/release` removes configurations obtained through DHCP  
+	- `/displaydns` displays the local DNS cache  
+	- `/flushdns` clears the local DNS cache  
+
+## Disk Tools and the registry  
+
+- Disk Cleanup (clanmgr.exe)  
+	- Files in teh Recycle Bin  
+	- Temporary Internet files  
+	- Downloaded program files  
+	- Temporary files  
+
+- Disk Defragment (dfrgui.exe)  
+	- Optimize and Defragment Drives (Windows 10)  
+	- Defragmenting (HDD) - Bits on a hard disk drive are rearranged so files can be loaded faster.  
+		- Defragging a drive too frequently can decrease its lifespan  
+	- Trimming (SSD)  
+		- Makes sure that the NAND memory chips on an SSD ar worn evenly to mazimize the lifespan of the drive  
+
+- Registry Editor (regedit.exe)  
+	- a database that stores all the settings and configurations for Windows and it's appliaitons  
+	- the `regedit` command can be used to launch the Registry Editor  
+- Registry Keys  
+	- HKEY_CLASSES_ROOT: stores file association information  
+	- HKEY_USERS: Stores settings that apply to all users  
+	- HKEY_CURRENT_USER: Stores settings for he individual users  
+	- HKEY_LOCAL_MACHINE: Stores settings for all devices that have been installed or removed form the system  
+	- HKEY_CURRENT_CONFIG: Stores settings for individual devices when multiple of the same type of device have been installed  
+
 
 
 
