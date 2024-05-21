@@ -160,6 +160,23 @@ Create a custom toolbox of useful utilities referred to as "Snap-ins"
 - Snap-ins are the other consoles that are available elsewhere like the Device Manager or Disk Management  
 - `mmc` command can be used to launch the Microsoft Management Console  
 
+- Useful Snap-ins  
+	- Disk Management (diskmagmt.msc)  
+		- Manage Disk Partitions
+	- TaskScheduler (taskschd.msc)
+		- Create and schedule tasks to run
+	- Device Manager (devmgmt.msc)  
+		- Check, update and install device drivers
+	- Certified Manager (certmgr.msc)
+		- Check and manage certificates installed on a computer
+	- Local Users and Groups (lusrmgr.msc)  
+		- Create, change and delete users on local computer  
+	- Performance Monitor ( perfmon.msc)  
+		- Monitor computer performance  
+	- Group Policy Editor (gpedit.msc)  
+		- Edit local group policy  
+	
+
 ### System info and Configuration  
 
 System information is for viewing detailed information on system hardware and software  
@@ -187,6 +204,57 @@ System information is for viewing detailed information on system hardware and so
 	- It is possible to log out users in this tab  
 - Startup: Disable or enable auto-starting applications  
 - `taskmgr` can be used to launch the task manager via a run box  
+- Ctrl + Shift + Esc
+
+## Control Panel Options  
+
+Filled with applets  
+This covers Windows 10 Control Panel utility  
+
+- Internet Options  
+	- Configure default internet browser options  
+- Devices and Printers  
+	- Add, remove, and administrate printers, scanners, cameras, etc.  
+- Programs and Features  
+	- Reinstall, uninstall programs and windows features  
+- Network and Sharing Center  
+	- Check and administer NIC  
+- System  
+	- Check computer specification, rename computer, join domain or workgroup  
+- Windows Defender Firewall
+	- Check and change firewall setting. Can open ports.  
+- Mail  
+	- Add, remove, or repair mailboces. Mostly used by Microsoft Outlook.  
+- Sound  
+	- Use to setup speaker or mic's on a computer  
+- User Accounts  
+	- Use to change, add, or remove local user accounts  
+- Device Manager  
+	- Check if devices are functioning correctly. Update or rollback drivers.
+- Indexing Options   
+	- Check what is being index on a system  
+- Administrative Tools  
+	- Set of commonly used utilities to manage the system  
+- Ease of Access 
+	- Make the system easier to use for persons with disabilities  
+- File explorer Options  
+	- Show hidden files  
+	- Hide extensions  
+	- General options  
+	- View options  
+- Power Options  
+	- Hibernate  
+	- Power Plans  
+	- Sleep/suspend  
+	- Standby  
+	- Choose what closing the lid does  
+	- Turn on fast startup  
+	- Universl Serial Bus (USB) selective suspend   
+
+**Hibernate** takes everything on the RAM and stores it on the hard drive  
+**Sleep Mode** puts the computer in a very low power mode  
+
+
 
 
 
