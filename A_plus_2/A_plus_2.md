@@ -206,7 +206,7 @@ System information is for viewing detailed information on system hardware and so
 - `taskmgr` can be used to launch the task manager via a run box  
 - Ctrl + Shift + Esc
 
-## Control Panel Options  
+### Control Panel Options  
 
 Filled with applets  
 This covers Windows 10 Control Panel utility  
@@ -254,6 +254,55 @@ This covers Windows 10 Control Panel utility
 **Hibernate** takes everything on the RAM and stores it on the hard drive  
 **Sleep Mode** puts the computer in a very low power mode  
 
+
+### App Settings  
+- Time and Language  
+	- Configure time and date, and language used on the computer.  
+- Update and Security  
+	- Set when updates will be applied to the computer  
+- Personalization  
+	- Personalization of the system to the user likening such as background 
+- Apps  
+	- Uninstall applications, change window defaults, and enable or disable windows features  
+- Privacy  
+	- Set what can be tracked on the system  
+- System  
+	- Allows you to change display information, sound, and notification setting  
+- Devices  
+	- Manage Bluetooth, printers, and a mouse  
+- Network and internet  
+	- Manage and connect new NIC 
+- Gaming  
+	- Connect Xbox gaming accounts  
+- Accounts  
+	- Create and link new accounts to the system  
+	
+### Firewall  
+
+- Block all incoming traffic  
+- Allows all outgoing traffic  
+- Configure and manage with rules  
+- Will need to make an exception to allow certain traffic such as ftp through the firewall  
+- Access by searching `Defender`  
+
+### Network Configurations  
+
+- Internet PRotocol addressing scheme  
+- DNS settings  
+- Subnet mask  
+- Gateway  
+- Static vs Dynamic  
+	- Static is manually typed in by a tchnician, Dynamic is assigned by the DHCP  
+	- If no DHCP is available when selecting dynamic, the computer will APIPA address of 169.254.x.x  
+- WWAN ( Wireless sidae area network)  
+	- Internet access using a wireless connection. Done by using an adapter form a mobile cellular network using tchnologies such as 4G or 5G.  
+- Private vs Public Network  
+	- When connecting to WIFI, your computer will ask if this is Public or Private. 
+	If the WIFI is public, the computer will block sharing and discovery from other computers. 
+	Increased security  
+- Metered Connection  
+	- ISP limits the amount of data allowed. 
+	You can tell your computer to not exceed the limit.  
 
 
 
