@@ -303,8 +303,172 @@ This covers Windows 10 Control Panel utility
 - Metered Connection  
 	- ISP limits the amount of data allowed. 
 	You can tell your computer to not exceed the limit.  
+	
+### Shared Resources  
+
+Folders and devices shared on network  
+- Printers  
+- File servers 
+- Shared Network Folders 
+- Mapped Drives  
+	- Allows a shared folder on another computer to act as a drive on a system  
+	- Share the folder as a shared Network folder first. Then set it as a drive.  
+	
+### Workgroup vs Domain  
+
+Workgroup  
+	- Decentralized setup used in SOHO  
+	- Uses local user accounts  
+	- **No central server** for computer or user management  
+	- Simple to setup with no additional server software needed.  
+
+Domain  
+	- Centralized setup used in small-large businesses  
+	- User accounts are **managed on a central server** called <u>domain controllers</u>  
+	- Computer configuration and security setting are set on a central server  
+	- Need to setup a server (Windows Server), more expensive  
+	- Adding a user ( and computer) to a domain
+		- In the server active directory, when looking at users, they are stored in Organizational Units, not folders, for a Group 
+		- In the server, create a new user  
+		- In the computer you wan to connect to the domain, an administrator must use their credentials to add the computer from that computer.  
+			- Control Panel > System and Security > Settings > Advanced System Settings > Rename or change computer domain
+		- Now someone can log in as the user that was created on the server  
+	
+### Installing Applications  
+
+- 32-Bit vs 64-Bit Requirements  
+	- 64 bit processors can handle large amounts of RAM vs 32-bit  
+	- 32-bit can use 4GB of RAM  
+	- 64-Bit can use 16 exabytes of RAM  
+
+- Requirements when installing Applications  
+	- Dedicated graphics vs integrated  
+		- some applications will require high end graphics  
+		- VRAM (Video random-access memory )  
+			- Memory built in the graphics card  
+	- RAM  
+	- CPU  
+	- Hardware token
+		- For secuirty, device will require a usb stick with a token to be inserted inorder to boot up  
+- Distribution methods  
+	- Physical media vs Downloadable  
+	- ISO mountable 
+		- ISO are a direct copy of an optical disk without compression  
+		- image of a disk  
+		- single file that stores all the necessary files for the application  
+		
+### File Systems  
+
+**Windows File Systems**
+
+FAT32 (File Allocation Table 32)  
+- Advantage:
+	- Most compatible file system  
+- Disadvantage  
+	- Partitions are limited to 32GB  
+	- Files are limited to 4GB  
+	- No security features  
+
+NTFS (New Technology File System)  
+- Advantages  
+	- Supports partitions bigger than 32GB  
+	- Supports files bigger than 4GB  
+	- Disk quotas  
+	- File and folder compression  
+	- File system security  
+		- File and folder permission  
+		- EFS (Encryption file system)  
+- Disadvantage  
+	- Only officially compatible with Windows  
+
+exFAT (Extensible FAT)  
+- Advantage  
+	- More compatible than NTFS  
+	- Supports partitions bigger than 32GB  
+	- Supports files bigger than 4GB  
+- Disadvantage  
+	- No security features  
+	
+**Non-Windows File Systems**  
+
+- macOS File Systems 
+	- HFS+ (Hierarchical File System Plus)  
+	- APFS (Apple File System )  
+	- macOS does support read and write access to FAT32 and exFAT partitions but only support read-only access to NTFS  
+- Linux Files Systems  
+	- ext3: (Third Extended File System)  
+	- ext4: ( Fourth Extended File System)  
+	- Linux can read and write to NTFS, FAT32, exFAT, and HFS+  
+- Optical Disc Files System  
+	- CDFS (Compact Dixc File System)  
+	- UDF ( Universal Disc Format)  
+
+![File System Compatibility](./images/file_compat.JPG)  
+
+### Making a bootable USB Stick  
+
+- Download the downloadable media from Windows site  
+- Plug in a USB stick  
+- Go through the installation process on the USB  
+
+- **ISO** is used for Virtual machine installation  
+
+- To install on the computer, change the boot order to boot into the USB  
+- You can do this same process for repairing Windows, just select repair drive instead of install new  
 
 
+### Installing an OS  
+
+- Network  
+	- Windows Deployment Service (WDS)  
+	- Target computer must support network booting, 
+	PXE (Preboot Execution Environment)  
+		- Looks for the deployment server  
+
+- Clean Installation  
+	- Empty hard drive  
+	- Bootable installation media  
+
+- Cloning / Imaging (Ghosting)  
+	- Duplicates the entire software installation of a system. Including the OS, drivers, applications, and configurations  
+	- Can be done directly connected to the hard drive or over the network  
+	- Before you clone the drive, you must run "SysPrep" to remove security IDs that are generated for activation purposes  
+	
+- Recovery Partition Installation (Similar to an Image)  
+	- Pre-Built system sold with an OS already installed will either include a recovery partition with the OS, dirver, and other bundled software  
+	- Returns computer to OEM, wipes drives
+- Repair Installation  
+	- Used to reinstall Windows files if the OS is giving issues  
+- Third-Party Drivers  
+
+
+### Partition Table Formats  
+
+Logical segmenation of a physical hard drive  
+Created for data separation  
+- MBR (Master Boot Record)(old)  
+	- This is the first sector of a MBR partitioned drive and contains code that informs the system about installed OS  
+	- Allows 4 primaty partitions  
+	- Limited to 2.2 TB partitions 
+- GPT (GUID Partition Table)  
+	- Theoretically allows for unlimited primary partitions  
+	- Windows is limited to 128 primary partitions by design  
+	- NOT limited to 2.2 TB partitions  
+- Primary Partitions  
+	- These partitions are used to boot an operating system.  
+	- If you have multiple OS on one disk they each will require their own primary partitions  
+- Extended Partitions  
+	- These partitions are used to overcome the four primary partition limit  
+	- A single extended partition can contain many logical drives, each logical drive appears as a partition but can not be used to store the OS.  
+- Hidden Partition  
+	- Often used by OEMs to store system recovery data (recovery partitions)  
+- Swap partition  
+	- Used a virtual memory by some OS  
+- Drive Format  
+	- Full Format  
+		- Runs an additional step that checks the hard drive for any bad sectors  
+	- Quick Format  
+		- Drive is not checked for bad sectors  
 
 
 
