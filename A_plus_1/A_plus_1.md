@@ -12,7 +12,7 @@
 * Devices  
 	- The old mouse and keyboard connection to computers (round with pins) was called a PS2 connection  
 	- CMOS = BIOS chip  
-	- Chipset: directs the communication between the processor and rame  
+	- Chipset: directs the communication between the processor and RAM  
 * Storage types  
 	- Local Network  
 		- NAS - Network Attached Storage  
@@ -98,7 +98,7 @@
 	- Made of many protocols like HTTP and FTP
 * TCP - connection oriented Protocol  
 	- In the applications and network layers of OSI
-	- Keeps tract of the segments being transmitted or received by assigning numbers to every single one  
+	- Keeps track of the segments being transmitted or received by assigning numbers to every single one  
 	- Flow control limits the rate of data transfer to ensure reliability  
 	- It won't load the whole page if a single piece of the data is missing  
 	- 24-60 bytes (high overhead)
@@ -110,6 +110,28 @@
 
 ### Ports  
 * 65,535 ports on a computer  
+
+| Name | Ports | Protocol |
+| :--- | :---: | :---: |  
+| FTP | 20, 21 | TCP |  
+| Trivial FTP | 69 | UDP |  
+| SFTP | 22 | TCP |  
+| SMTP | 25 | TCP |  
+| POP3 | 110 | TCP |  
+| IMAP | 143 | TCP |  
+| Telnet | 23 | TCP |  
+| SSH | 22 | TCP |  
+| DNS | 53 | TCP/UDP |  
+| DHCP | (67 server) 68 client | UDP |  
+| HTTP | 80 | TCP |  
+| HTTPS | 443 | TCP |  
+| NetBIOS | 137/138 | TCP/UDP |  
+| SNMP | 161/162 | UDP |  
+| LDAP | 389 | TCP/UDP |  
+| SMB | 445 | TCP |  
+| RDP | 3389 | TCP |  
+ 
+
 * File Transfer Protocol - FTP
 	- share files over a LAN or WAN  
 	- TCP port 20 and 21  
@@ -125,7 +147,7 @@
 * Secure File Transfer Protocol  
 	- Secure version of FTP  
 	- has encryption  
-	- SFTP is an extension of SSH which is shy they use the same port number  
+	- SFTP is an extension of SSH which is why they use the same port number  
 	- TCP Port 22  
 * Simple Mail Transfer Protocol  
 	- outgoing mail to a server  
