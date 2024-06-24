@@ -470,6 +470,47 @@ Created for data separation
 	- Quick Format  
 		- Drive is not checked for bad sectors  
 
+### Mac OS features
 
+- File types:
+	- .pkg - compressed files used to install a macOS applicaition  
+	- .dmg - Apple Disk Image files often used to store compressed software installers  
+	- .app - files are installed applications.
+
+- Multiple Desktops: Use Mission Control to create additional desktops called spaces  
+- Keychaing: stores passwords and account information, reduces the number of passwords you have to remember  
+- FileVault: Disc encryption  
+
+
+### Linux Features  
+
+- Samba - software implementation of the CIFS/SMB networking protocols that supports Microsoft Windows Server Domain, 
+Active Directory and Microsoft Windows NT domains.  With Samba, Unix-like OSes can interoperate with Windows 
+and provide file and print services to Windows clients.  
+
+- Know these Linux Commands: (Linux is case sensitive, and uses '/' for directory)
+	- man: display help for commands  
+	- ls: list files in directory  
+	- mv: move or rename a file  
+	- cp: copy a file  
+	- rm: remove a file  
+	- mkdir: create a new floder  
+	- df: display free storage space  
+	- ps: displays a list of running processes  
+	- top: displays running processes an resource usage  
+	- find: search for text in files in a directory  
+	- grep: search for text in files in a directory  
+	- dig: troubleshoot DNS  
+	- cat: displays the contents of a file  
+	- nano: text editor  
+	- pwd: present working directory   
+	- passwd: change password  
+	- ip: displays and configure a NIC  
+	- chown: change the owner and group of a file  
+		- chown user:group file  
+	- chmod: change the permissions of a file or folder  
+	- su: super user  
+	- sudo: super user do 
+	
 
 
