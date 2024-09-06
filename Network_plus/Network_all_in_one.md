@@ -179,3 +179,233 @@ protocol, is called **peer-to-peer**
 - Mesh topology: mostly seen in wireless connections. In a *partial mesh* some 
 computers may have to traverse through other computers to reach their destination.  
 
+
+# Ethernet Standards  
+
+![alt text](images/ethernet_standards.png "IEEE Ethernet Standards")  
+
+**Baseband**: only a single signal travles over the wires at a time, occupying the
+lowest frequency. (Ethernet networks)  
+
+**Broadband**: multiple signals flow over the same wire at the same time, modulating
+to higher frequencies.  (Cable television and cable Internet)  
+
+**Half-duplex**: can send and receive data, but not at the same time  
+
+**Full-duplex**: can send and receive data at the same time. Does not increase 
+network speed, but does increase network bandwidth  
+
+**Media Converter**: connect any type of Ethernet cableing together  
+
+**Transceiver/optic**: the connecting module linking the cable to the switch  
+
+**Gigabit interface converter (GBIC)**: modular port for gigabit ethernet  
+
+**Small form-factor pluggable (SFP)**: hot-swappable replacement to GBIC. Take up 
+less space.  
+
+![alt text](images/sfp.png)  
+
+**Wave division multiplexing (WDM)**: differentiate the different wave signals on 
+a single fiber, creating a *single strand fiber transmission*  
+
+**Single Strand Fiber Transmission**:  
+
+**Bidirectional(BiDi) transceivers**: have only a single optical port designed 
+inside to send on one wavelength (like 1310nm) and receive on a different 
+wavelength (like 1550nm)  
+
+
+**Synchronous Optical Network(SONET)**: standardized protocol that transfer 
+multiple digital bit streams synchronously over optical fiber using lasers or 
+highly coherent light from light-emitting diodes (LEDs). At low transmission 
+rates data can also be transferred via an electrical interface.  
+
+**Multisource agreement (MSA)**: agreements amoung multiple manufacturers to make 
+interoperable devices and standards    
+
+
+
+- All modern NICs are multispeed and auto-sensing  
+
+**Ethernet Connectors**  
+
+![alt text](images/early_ethernet_connections.png)  
+
+
+### 100BASE-T  
+
+- 100 Mbps  
+
+- **Signal Type**: Baseband  
+
+- **Distance**: 100 m
+
+- **Node Limit**: 1024  
+
+- **Topology**: Star-bus topology; physical star, logical bus  
+
+- **Cable Type** Cat 5 or better UTP or STP cabling with RJ-45/8P8C connectors  
+
+### 100BASE-FX  
+
+- Fiber based networks improve on UTP cabling for three reasons:  
+
+	1) UTP has a limit of 100m  
+	
+	2) UTP lacks electrical shielding  
+	
+	3) UTP is easy to tap, not good for high security  
+	
+- **Speed**: 100Mbps  
+
+- **Signal**: Baseband  
+
+- **Distance**: 2000m, or 2km  
+
+- **Node Limit**: No more than 1024 nodes per hub/switch  
+
+- **Topology**: Star-bus topology: physical star, logical bus  
+
+- **Cable Type**: Multimode fiber-optic cabling (generally OM1) with ST or SC connectors  
+
+
+### 100BASE-SX  
+
+- Fiber on OM1 or OM2 at 850nm. 
+
+- Used ST, SC, LC connectors  
+
+- LED short distance.  
+
+- Not common anymore  
+
+### Gigabit Ethernet/ 1000BASE-T  
+
+- 1000BASE-T uses four-pair UTP or STP to achieve gigabit performance  
+
+- Max length 100m  
+
+- RJ-45 connector  
+
+- Cat 5e  or 6 UTP  
+
+### 1000BASE-SX  
+
+- multimode fiber-optic  
+
+- max length 220-500m  
+
+- 850-nm wavelength and LED 
+
+- LC connectors  
+
+### 1000BASE-LX  
+
+- long-distance single-mode (5km to 70km)  
+
+- 1300-nm wavelength
+
+## Small Form Factor Fiber Connectors  
+
+- Reasons SFF connectors were created:  
+	
+	1) ST connectors were relatively large, and required twisting, which is not 
+	ideal for fiber cables  
+	
+	2) SC connectors snap in and out, which was good, but they were still too large  
+	
+- Mechanical Transfer Register Jack (MT-RJ) was the first created  
+
+![alt text](images/mt_rj.png "MT-RJ Connector")  
+
+- Local connector (LC) was created next  
+
+
+
+**Fiber connection contact types**:  
+
+![alt text](images/connection_contact_points.png)  
+
+- Flat  
+
+- Physical contact (PC)  
+
+- Ultra-physical contact (UPC)  
+
+- Angled physical contact (APC)  
+
+	- 8 degree angle  
+	
+### Fiber based 10 GbE  
+
+- Typical transceiver in 10GbE is **Enhanced Small Form-Factor pluggable (SFP+)**  
+
+- R for LAN-based signal  
+
+- W for SONET/WAN-based signaling  
+
+| Standard | Fiber Type | Wavelength | Physical Layer Signaling | Maximum Signal Length |  
+| :--- | 
+| 10BASE-SR | Multimode | 850nm | LAN | 33-400 m |
+| 10BASE-SW | Multimode | 850nm | SONET/WAN | 33-400 m |
+
+- OM1 is 33m range, OM4 is 400m range  
+
+**Long wavelength**  
+
+| Standard | Fiber Type | Wavelength | Physical Layer Signaling | Maximum Signal Length |  
+| :--- | 
+| 10BASE-LR | Single-mode | 1310nm | LAN | 10 km |
+| 10BASE-LW | Single-mode | 1310nm | SONET/WAN | 10 km |  
+
+**Extra Long Wavelength**  
+
+| Standard | Fiber Type | Wavelength | Physical Layer Signaling | Maximum Signal Length |  
+| :--- | 
+| 10BASE-ER | Single-mode | 1550nm | LAN | 40 km |
+| 10BASE-EW | Single-mode | 1550nm | SONET/WAN | 40 km |   
+
+**Copper-Based 10GbE**  
+
+- Cat 6, 55m Max
+
+- Cat 6a, 100m max  
+
+### Fiber Transceivers  
+
+- BiDi advantages over single strand fiber transmission:  
+
+	- Cost less, only need half the cabling  
+	
+	- use existing fiber runs to rapidly double the capacity of a network
+
+### Backbones
+
+- Multispeed Ethernet networks work best for giving users the fastest network 
+response  
+
+- High-speed switches maintain the backbone of the network.  No computers, other
+than possibly servers, attach directly to this backbone.
+
+- Requires switches with dedicated high-speed ports  
+
+![alt text](images/backbone.png)
+
+
+### 40GbE and 100GbE
+
+- 40GbE BiDI tranceivers use **quad small form-factor pluggable (QSFP)** optics  
+
+- 40GbE runs on OM3 or better multimode fiber, uses laser light, uses four channel 
+connectors.  
+
+- 40GbE running on Cat 8 UTP max range of 30m, called 40BASE-T  
+
+- 100GbE employ MMF and SMP with various connectors.  
+
+- 100GbE uses a QSFP28 connector that has four channels of 25 Gb each. Also 
+called QSFP100 or 100G QSFP  
+
+  
+
