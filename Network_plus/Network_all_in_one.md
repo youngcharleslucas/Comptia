@@ -407,5 +407,102 @@ connectors.
 - 100GbE uses a QSFP28 connector that has four channels of 25 Gb each. Also 
 called QSFP100 or 100G QSFP  
 
-  
+
+# Intalling a physical Network  
+
+**Structured Cabling**: set of standards and proprietary systems  
+
+- In the US, these are mostly defined by the **Telecommunications Industry Association**  
+(TIA) standards  
+
+- *Building Industry Consulting Service International (BICSI* provides a series 
+of widely recognized certifications and training  
+
+- Components of structured cabling: 
+
+	1) Telecommunications Room or Intermediate Distribution Frame (IDF)  
+	
+	2) Horizontal cabling or runs  
+	
+	3) Work area(s)  
+	
+- Horizontal cable is Cat 5e or better UTP for copper 1000BASE-T.  Fiber-based 
+1000BASE-SX use multimode fiber-optic cable. Network installations today favor Cat 6    
+
+**Solid Core UTP**: better conductor, but is stiff and will break if  handled too 
+often  
+
+**Stranded Core UTP**: not as good of a conductor, but will stand up to substantial 
+handling  
+
+- Horizontal cabling should always be solid core  
+
+- All UTP cables are 4-pair UTP now  
+
+- Equpment racks are 19" wide, and measured in *units* (U). Each U is 1.75". A 
+rack that is 42U has a height of 42 units  
+
+**two-post rack**: smaller equipment rack  
+
+**four-post rack**: larger equipment rack  
+
+**server rail**: allows you to pull out the server for maintenance, like replace 
+dead drives  
+
+**power distribution unit (PDU)**: used in larger racks for cetralized power 
+management. Better PDUs enable remote connectivity and management for power 
+monitoring.  
+
+- **locking racks** and **locking cabinets** are terms for chassis and doors on 
+racks with locking mechanisms  
+
+### Patch Panels and Cables  
+
+**Patch panels**: box with a row of femal ports in the front and permanent connections 
+in the back to which you connect horizontal cables (solid core).  
+
+- Most common type of patch panels are 110 block. Older patch panels were 66 block 
+for telephone installation  
+
+- All patch panels have a space in front for labels. A standard for labeling 
+patches is *ANSI/TIA-606-C*  
+
+- Buy Cat 6 patch panels. They handle 250-MHz. Buying a cheaper patch panel for 
+a lower Cat rating will eliminate any gains made by installing Cat 6 runs. Cat 6 
+panels also offer lower crosstalk and network interference  
+
+- **Patch Cables**: are straight-through UTP cables that connect the patch ports 
+to the switch. These are stranded core. The is also used to connect the PC to the 
+wall outlet.    
+
+- Some prefer to buy premade patch cables instead of making them so that they 
+have more options for color schemes  
+
+**Patch bay**: dedicated block with Audio/Visual connections rather than twisted 
+pair and fiber network connections  
+
+- TIA/EIA 568 specification allows only UTP cable lengths of 90 meters, this is 
+to account for patch cables used to connect PCs to the wall with patch cables. 
+This is not to exceed the Cat 6 length limit of 100m  
+
+- Most telephone installation will use 25-pair UTP cables running to a 66 block 
+to a telecommunications room on each floor  
+
+### Demarc  
+
+**Demarc (demarcation point)**: physical location of the connection and marks the 
+dividing line of responsibility. Located in the **service-related entry point**.  
+
+**Network Interface Unit (NIC)**: in private homes, the device supplied by the 
+ISP that serves as the demarc  
+
+**Smartjack**: sets up remote loopback enabling internet suppliers to diagnose 
+faults in the system   
+
+**Customer-Premises equipment (CPE)**: The device that networks connect to after 
+the demarc for building distribution  
+
+
+
+
 
