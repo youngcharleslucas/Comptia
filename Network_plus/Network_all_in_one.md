@@ -502,7 +502,167 @@ faults in the system
 **Customer-Premises equipment (CPE)**: The device that networks connect to after 
 the demarc for building distribution  
 
+**Demarc Extension**: cabling running from the NIU to whatever CPE is used 
+by the customer. This connects to a powerful switch, which connects to the  main patch 
+panel (vertiacal cross-connect)  
 
+**Vertical Cross-connect**: Main patch panel that connects to all other patch panels  
+
+**Fiber distribution panel**: Fiber patch panel   
+
+**Main Distribution Frame (MDF)**: room where the demarc, LAN cross-connects exist  
+
+### Pulling cable  
+
+- Local codes, TIA, and the National Electrical Code (NEC) have rules about how 
+you pull cabling  
+
+- **Low-voltage mounting bracket**: installed on the opening on the wall created 
+in the sheetrock for a patch  
+
+- 110-punchdowns connections are used on the back of the wall jack  
+
+### Rolling your own patch cable  
+
+1) Cut the cable square using RJ-45 crimpers or scissors  
+
+2) Strip at least 1/2 inch of plastic jacket from the end of the cable with a 
+dedicated cable stripper or the one built into the crimper tool  
+
+3) Insert each individual wire into the correct location according 
+to either T568A or T568B, unravel as little as possible  
+
+4) Insert the crimp into the cripmer and press. The crimper has a stop 
+to prevent you from using too much pressure  
+
+### Connecting to the patch panel  
+
+- **Plastic D-rings** guide the patch cables neatly along the sides and front of the 
+patch panel  
+
+- **Finger Boxes**: rectangular slots in the front; the patch cables run into the open 
+ends of the bock, and individual cables are thread through the fingers on their 
+way to the patch panel 
+
+### Testing Cable Runs  
+
+- Verify that the cable can handle the speed of your network  
+
+- Three basic issues with Layer 1:  
+
+	- Signal degredation  
+	
+	- Lack of connection  
+	
+	- Interference  
+	
+- Open or short of a cable both cause no connectivity  
+
+- **Split pair**: the signal from any of the pairs in the same cable interfer 
+with another pair.  
+
+- **Cable tester**: verify that both ends are terminated correctly  
+
+	- **Continuity Tester**  
+	
+	- **Wire Map**: tests all the wires on both ends of the cable connect to the 
+	right spot. Can find shorts and crossed wires.  
+	
+	- **Multimeter**: Test AC and DC voltage, current, continuity, and resistance  
+	
+		- Zero Ohms indicate continuity, infinite Ohms mean no connection  
+		
+	- **Time-domain reflectometer (TDR)**: can tell you where a break is located  
+	
+- **Crosstalk**: Signal sent down one pair is picked up by neighboring pairs  
+
+	- Poor crimp can cause increased crosstalk  
+	
+	- **Near-end Crosstalk (NEXT)**: crosstalk occuring on the signalling end  
+	
+	- **Far-end Crosstalk (FEXT)**: crosstalk occuring on the opposite end of signal  
+	
+	- FEXT and NEXT are measured in decibels. You want lower decible. **Decibel**
+	**loss** is a way to measure signal loss.  
+	
+- **Attenuation**: the signal growing gradually weaker as it traverses the cable  
+
+- **Latency**: delay of Ethernet frames traversing the cable from sender to receiver  
+
+- **Jitter**: delay in completing a transmission of all the frames in a message. 
+This can be due to a large amount of machines on the network. Video chats will 
+appear jittery  
+
+- **Cable Certifiers**: High end testing device that can generate reports and 
+certificates for the performance of installed cables   
+
+- **Coupler**: small device with two female ports that enable you to connect two 
+pieces of cable together to overcome distance limitations  
+
+- **Toner**: used to trace cables, a tool that is composed of two devices. 
+The **tone generator** connects to the cable with alligator clips or a network 
+jack, then sends electrical signal down the wire. The **Tone Probe** will make 
+a noise when it is placed near the wire with the signal  
+
+### Causes of poor Fiber Signal    
+
+- Damaged Cables or open connections  
+
+- Dirty connectors  
+
+- Connector mismatch 
+
+- Attenuation   
+
+- **Dispersion**: signal spreads out over long distance. Also called **modal**
+**dispersion**, where dispersion or attenuation is caused by signals traveling 
+too far without help  
+
+- Exceeding the **bend radius limitation**.  Too much bend, and the light will 
+escape through the bend, called **light leak**.  
+
+- Incorrect transceiver/ tranceiver mismatch: different manufacturers may be 
+incompatible  
+
+- Cable mismatch, fiber mismatch, incorrect cable type  
+
+- Wavelength mismatch: the switch may expect 1310nm, but the signal sent is 
+1530nm  
+
+- **Optical Time-domain Reflectometer (OTDR)**: finds the location of a break in 
+a fiber cable  
+
+- **fusion splicer**: allows for the connection of two fiber-optic cables without
+losing quality  
+
+
+### NICs  
+
+- all Ethernet NICs us RJ-45
+
+- The Expansion slot used on PCs to install a NIC is the PCIe  slot, either one 
+or two lanes  
+
+- **Port Aggregation, Link Aggregation, Bonding**: putting multiple NICs in one 
+switch to increase the bandwidth  
+
+- **Link Aggregation Control PRotocol (LACP)**: controls how multiple network 
+devices send a receive data as a single connection  
+
+
+### Problems in the IDF  
+
+- UPS have two types, online (which is continuously supplying power to the machine) 
+and standby (senses when AC power is lost, then will switch to suppling power from 
+the battery)  
+
+- ** Voltage Event Recorder**: plugs into the power outlet and tracks the voltage 
+over time.  
+
+
+
+	
+	
 
 
 
