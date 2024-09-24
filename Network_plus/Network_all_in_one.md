@@ -660,6 +660,66 @@ the battery)
 over time.  
 
 
+# TCP/IP Basics  
+
+**Internet Protocol (IP)**: works on the Network Layer  
+
+**Internet Control Message Protocol (ICMP)**: is a TCP/IP, plays a role in error 
+reporting and diagnostics. Used by the `ping` utility.  
+
+**Simple IP header**:  
+
+| Ver | IHL | DSCP | ECN | Total Length | TTL | Protocol | ... |  
+| :---: |
+
+- Version: IPv4 or IPv6  
+
+- Total Length: Total size of the IP packet in octets, including the IP header and 
+payload. This field is 16 bits. Limits the packet size to 65 KB.  
+
+- Time to Live (TTL): Prevents the packet for endlessly spinning through the 
+internet. Has a counter that decrements everytime the packet goes through a 
+router. Cannot start higher than 255, most start at 128.  
+
+- Protocol: either TCP or UDP  
+
+### Transport Layer Protocols  
+
+**Transmission Control Protocol (TCP)**: connection-oriented  
+
+- TCP three-way handshake: SYN, SYN-ACK, ACK  
+
+- TCP chops data into segments, segments get a sequence number. The receiving system 
+will request a segment if it was missing.  
+
+- TCP Header:  
+
+| Souce port | Destination port | Sequence Number | Acknowledgement number |  
+| :---: |
+
+- **Sequence number and Acknowledgement Number**: enable the sending and receiving 
+computers to keep track of the various pieces of data flowing back and forth.  
+
+- **Flags**: The individual bits give both sides detailed information about the 
+*state of the connection*  
+
+- **Checksum**: check the TCP header for errors
+
+**User Datagram Protocol (UDP)**: connectionless  
+
+- Used by *Domain Name System (DNS)* and *Dynamic Host Configuration Protocol (DHCP)*  
+
+- UPD Header:  
+
+| Source Port | Destination Port | Length | Checksum |  
+| :---: |  
+
+- UDP does not chop up data, but sends it as a *datagram* (Not a segment like TCP)  
+
+
+
+
+
 
 	
 	
