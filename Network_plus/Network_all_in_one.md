@@ -716,6 +716,108 @@ computers to keep track of the various pieces of data flowing back and forth.
 
 - UDP does not chop up data, but sends it as a *datagram* (Not a segment like TCP)  
 
+At the LAN level, every host runs TCP/IP software over Ethernet hardware  
+
+To get other computer's mac address, a broadcast is sent out by the requesting 
+client. It is called **ARP request or Address Resolution Protocol** to MAC 
+address FF-FF-FF-FF-FF-FF. The switch will broadcast this to every connected node.  
+
+- In Windows, the ARP cache can be seen with the command `arp -a`  
+
+IPv4 are 32 bit values.  Normally written in **dotted decimal notation**  
+
+A WAN is nothing more than two or more connected LANs.  For a WAN to work, each LAN  
+needs some form of unique identifier called a **network ID**. It will usually 
+have a host ID of all 0s.
+
+Every TCP/IP LAN that wants to connect to another TCP/IP LAN must have a router.  
+
+**Default Gateway**: a term for both the router itself and the router's interface 
+on the LAN.  
+
+- To connect the network beyond the router, you use the IP address of the 
+default gateway.
+
+- The default gateway is usually configured to be the lowest or highest host address.
+So for a network ID of 22.33.4.x, the default gateway could be 22.33.4.1 or 
+22.33.4.254.
+
+Two NIC router, common in many homes. One NIC connects to the LAN, the other 
+connects to the Internet Service Provider's network. Built into this router is 
+a routing table.  
+
+- **Routing Table**: instructions that tell the router what to do with incoming
+packets and where to send them.  
+
+- No two LANs can share the same network id 
+
+- The highest host id (all 255) is used as a **boradcast address**, that will 
+talk to every computer on the LAN  
+
+**Subnet Mask**: tells the sending computer if the IP address is local or long 
+distance.  The subnet mask represents the ones as the network id and the 
+**host ID** are the 0s.  
+
+`11111111111111111111111100000000`  
+
+is the binary representation of dotted decimal `255.255.255.0` subnet mask.  
+
+- If a sending computer knows that the recipient is local, because they share 
+the same network id from the known subnet mask, then the sending computer can 
+broadcast for a MAC address with ARP, Address Resolution Protocol.  
+
+- Whenever a computer wnts to send to an IP address on another LAN, it knows 
+to send the packet to the default gateway. It still sends out an ARP broadcast,
+but this time it's to learn the MAC address for the default gateway.  
+
+Most representations of subnet masks are done with CIDR notation:  
+```
+11111111111111111111111100000000 = /24  
+11111111000000000000000000000000 = /8  
+```  
+
+This shows the IP address and the subnet mask in one address  
+
+### Class IDs
+
+**Internet Assigned Numbers Authority (IANA)**: tracks and disperses IP addresses  
+
+- IANA oversees 5 **Regional Internet Registries (RIR)** that parcel out IP 
+addresses to ISPs and corporations.  
+
+- The RIR for North America is **American Registry for Internet Numbers (ARIN)**  
+
+|     		| First Decimal	| Addresses 				| Hosts per Network ID	|  
+| :---		|  
+| Class A	| 1-26			| 1.0.0.0-126.255.255.255	| 16,777,216			|  
+| Class B	| 128-191		| 128.0.0.0-191.255.255.255	| 65,534				|  
+| Class C 	| 192-223		| 192.0.0.0-233.255.255.255	| 254					|  
+| Class D 	| 224-239		| 224.0.0.0-239.255.255.255 | Multicast				|  
+| Class E 	| 240-255		| 240.0.0.0-255.255.255.255	| Experimental			|  
+
+Remember to subract 2 from the IP block for the network id and broadcast address.  
+
+There are 4 ways to send a packet:  
+
+- *Broadcast*: which is where every computer on the LAN hears the message  
+
+- *Unicast*: where one computer sends a message directly to another  
+
+- *Anycast*: where multiple computers share a single address and routers direct 
+the messages tot he closest computer.  
+
+- *Multicast*: where a single computer sends a message to a group of interested 
+computers.  
+
+Routers *Multicast* to talk to eachother.  
+
+Class IDs did not scale well, so CIDR was created  
+
+### CIDR and Subnetting  
+
+
+
+
 
 
 
